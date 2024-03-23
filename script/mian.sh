@@ -3,7 +3,6 @@
 # 下载规则
 curl -o i-1.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 curl -o i-8.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
-curl -o i-jiekouAD.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
 curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 curl -o i-rule.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 curl -o i-easylistchina+easylist.txt https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
