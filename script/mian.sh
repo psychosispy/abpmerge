@@ -2,16 +2,14 @@
 
 # 下载规则
 curl -o i-1.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-curl -o i-4.txt https://raw.githubusercontent.com/damengzhu/abpmerge/main/EasyListnoElementRules.txt
 curl -o i-8.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
 curl -o i-jiekouAD.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/xinggsf/master/cjx-annoyance.txt
+curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 curl -o i-rule.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 curl -o i-easylistchina+easylist.txt https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 curl -o i-mv.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 curl -o i-ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i-antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-curl -o i-anti-adblock-killer-filters.txt https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
 
 # 合并规则并去除重复项
 cat i*.txt > i-mergd.txt
