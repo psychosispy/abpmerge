@@ -7,7 +7,7 @@ curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/m
 curl -o i-rule.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 curl -o i-mv.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 curl -o i-AdGuard_Base_optimized.txt https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
-curl -o i-AdGuard_Annoyances_optimized.txt https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
+# curl -o i-AdGuard_Annoyances_optimized.txt https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
 curl -o i-AdGuard_china.txt https://filters.adtidy.org/extension/ublock/filters/224.txt
 curl -o i-ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i-antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
