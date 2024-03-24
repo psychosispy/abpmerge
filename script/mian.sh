@@ -1,14 +1,17 @@
 #!/bin/sh
 
 # 下载规则
-curl -o i-1.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-curl -o i-8.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
+curl -o i-jiekouAD.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+curl -o i-adt-chinalist-easylist.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
 curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 curl -o i-rule.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-curl -o i-easylistchina+easylist.txt https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 curl -o i-mv.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
+curl -o i-easylist_optimized.txt https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt
+curl -o i-easylistcn_optimized.txt https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt
 curl -o i-ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 curl -o i-antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+curl -o i-CN.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/CN.txt
+curl -o i-Intl.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/Intl.txt
 
 # 合并规则并去除重复项
 cat i*.txt > i-mergd.txt
@@ -23,8 +26,8 @@ num=`cat i-tmp.txt | wc -l`
 # 添加标题和时间
 echo "[Adblock Plus 2.0]" >> i-tpdate.txt
 echo "! Title: ABP Merge Rules" >> i-tpdate.txt
-echo "! Description: 该规则合并自jiekouAD，AdGuard中文语言规则，AdGuard移动横幅广告过滤器，AdGuard URL跟踪过滤器，EasyList no Element Rules，乘风视频广告过滤规则，EasylistChina，ChinaList+EasyList(修正)，EasylistLite，CJX'sAnnoyance，Adblock Warning Removal List以及补充的一些规则" >> i-tpdate.txt
-echo "! Homepage: https://github.com/damengzhu/abpmerge" >> i-tpdate.txt
+echo "! Description: 该规则合并自jiekouAD，，乘风视频广告过滤规则，Easylist+China_optimized，ChinaList+EasyList(修正)，CJX'sAnnoyance，Adblock Warning Removal List以及补充的一些规则" >> i-tpdate.txt
+echo "! Homepage: https://github.com/psychosispy/abpmerge" >> i-tpdate.txt
 echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> i-tpdate.txt
 echo "! Total count: $num" >> i-tpdate.txt
 cat i-tpdate.txt i-tmp.txt > abpmerge.txt
