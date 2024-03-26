@@ -20,7 +20,7 @@ cat i*.txt > i-mergd.txt
 cat i-mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > i-tmpp.txt
 sort -n i-tmpp.txt | uniq > i-raw.txt
 
-grep -vFf i-raw.txt wlist.txt > i-tmp.txt
+grep -vFf wlist.txt i-raw.txt > i-tmp.txt
 
 python rule.py i-tmp.txt
 
