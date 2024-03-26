@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自jiekouAD，，乘风视频广告过滤规则，Easylist+China_optimized，ChinaList+EasyList(修正)，CJX'sAnnoyance，Adblock Warning Removal List以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-03-26 02:01:54
-! Total count: 58757
+! Version: 2024-03-26 02:06:27
+! Total count: 58760
 
 ###ADtip
 ###AdBlockDialog
@@ -1452,6 +1452,7 @@
 ##[src^='/Uploads/ad/'][src$='.gif'][alt='广告']
 ##[src^='/banners/pr_advertising_ads_banner']
 ##[src^='/static/resources/lp.php'][style^='max-width: 100%; transform-origin: left top;']
+##[src^='data:image/png;base64,iVBORw0KGgoAAAANSU'][style*='position: fixed; z-index: 2000000000; width: 30px; bottom:']
 ##[src^='https://369x520.com']
 ##[src^='https://ae01.alicdn.com/'][alt='歪歪漫画']
 ##[src^='https://dingbu.bj.bcebos.com/']
@@ -19056,7 +19057,9 @@ www.ghxi.com##.wpcom_ad_wrap
 www.ghxi.com##DIV[style^='padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: ']
 www.godic.net##ins.adsbygoogle
 www.google.com###tads,.ads-ad
+www.google.com###taw,#bottomads
 www.google.com$@$div[class="_ad"]
+www.google.com.hk###taw,#bottomads
 www.greenhua.com##span#grhua2,span#grhua1
 www.guancha.cn##div.adiphone,div.text-center.top-spacing2,div.adboard
 www.guhai.com.cn##table[width="960"][height="90"]
