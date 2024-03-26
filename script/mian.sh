@@ -12,15 +12,16 @@ curl -o i-ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADg
 curl -o i-antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
 curl -o i-CN.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/CN.txt
 curl -o i-Intl.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/Intl.txt
-# curl -o wlist.txt https://raw.githubusercontent.com/psychosispy/abpmerge/main/wlist.txt
-# curl -o i-AdGuard_Mobile_AppBanner.txt https://filters.adtidy.org/android/filters/20_optimized.txt
+curl -o i-AdGuard_Annoyances.txt https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt
+curl -o wlist.txt https://raw.githubusercontent.com/psychosispy/abpmerge/main/wlist.txt
+
 
 # 合并规则并去除重复项
 cat i*.txt > i-mergd.txt
 cat i-mergd.txt | grep -v '^!' | grep -v '^！' | grep -v '^# ' | grep -v '^# ' | grep -v '^\[' | grep -v '^\【' > i-tmpp.txt
-sort -n i-tmpp.txt | uniq > i-tmp.txt
+sort -n i-tmpp.txt | uniq > i-raw.txt
 
-# grep -vFf wlist.txt i-raw.txt > i-tmp.txt
+grep -vFf wlist.txt i-raw.txt > i-tmp.txt
 
 python rule.py i-tmp.txt
 
