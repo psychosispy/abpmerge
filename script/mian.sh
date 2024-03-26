@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # 下载规则
-curl -o i-AdGuard_cookie.txt https://filters.adtidy.org/extension/ublock/filters/18_optimized.txt
-curl -o i-AdGuard_Popups.txt https://filters.adtidy.org/extension/ublock/filters/19_optimized.txt
+# curl -o i-AdGuard_cookie.txt https://filters.adtidy.org/extension/ublock/filters/18_optimized.txt
+# curl -o i-AdGuard_Popups.txt https://filters.adtidy.org/extension/ublock/filters/19_optimized.txt
 curl -o i-AdGuard_AppBanners.txt https://filters.adtidy.org/extension/ublock/filters/20_optimized.txt
 curl -o i-AdGuard_MobileAds.txt https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
 curl -o i-AdGuard_china.txt https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt
