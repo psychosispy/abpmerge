@@ -1,20 +1,20 @@
 #!/bin/sh
 
 # 下载规则
-curl -o i-jiekouAD.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-curl -o i-adt-chinalist-easylist.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
-curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-curl -o i-rule.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-# curl -o i-appBanner.txt https://filters.adtidy.org/extension/ublock/filters/20_optimized.txt
-curl -o i-easylist.txt https://easylist-downloads.adblockplus.org/easylist-minified.txt
-curl -o i-AdGuard_china.txt https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt
-curl -o i-ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-curl -o i-antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-curl -o i-CN.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/CN.txt
-curl -o i-Intl.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/Intl.txt
 curl -o i-AdGuard_cookie.txt https://filters.adtidy.org/extension/ublock/filters/18_optimized.txt
 curl -o i-AdGuard_Popups.txt https://filters.adtidy.org/extension/ublock/filters/19_optimized.txt
 curl -o i-AdGuard_AppBanners.txt https://filters.adtidy.org/extension/ublock/filters/20_optimized.txt
+curl -o i-AdGuard_MobileAds.txt https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
+curl -o i-AdGuard_china.txt https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt
+curl -o i-easylist.txt https://easylist-downloads.adblockplus.org/easylist-minified.txt
+curl -o i-adt-chinalist-easylist.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
+curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+curl -o i-antiadblockfilters.txt https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+curl -o i-rule.txt https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
+curl -o i-jiekouAD.txt https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+curl -o i-ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+curl -o i-CN.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/CN.txt
+curl -o i-Intl.txt https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/Intl.txt
 curl -o wlist.txt https://raw.githubusercontent.com/psychosispy/abpmerge/main/wlist.txt
 
 
@@ -33,7 +33,7 @@ num=`cat i-tmp.txt | wc -l`
 # 添加标题和时间
 echo "[Adblock Plus 2.0]" >> i-tpdate.txt
 echo "! Title: ABP Merge Rules" >> i-tpdate.txt
-echo "! Description: 该规则合并自jiekouAD，，乘风视频广告过滤规则，Easylist+China_optimized，ChinaList+EasyList(修正)，CJX'sAnnoyance，Adblock Warning Removal List以及补充的一些规则" >> i-tpdate.txt
+echo "! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则" >> i-tpdate.txt
 echo "! Homepage: https://github.com/psychosispy/abpmerge" >> i-tpdate.txt
 echo "! Version: `date +"%Y-%m-%d %H:%M:%S"`" >> i-tpdate.txt
 echo "! Total count: $num" >> i-tpdate.txt
