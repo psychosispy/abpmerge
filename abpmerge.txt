@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-05-26 08:14:33
-! Total count: 66714
+! Version: 2024-05-26 20:12:19
+! Total count: 66738
 
 ###ADtip
 ###AdBlockDialog
@@ -3990,7 +3990,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /ad/headercreative/*
 /ad/image/*$image
 /ad/images/*$image,domain=~studiocalling.it
-/ad/img/*$image,domain=~jiji.com
+/ad/img/*$image,domain=~eki-net.com|~jiji.com
 /ad/postbid_handler1.0.9.js
 /ad/sdkApi/api.php
 /ad2/*?
@@ -10709,6 +10709,8 @@ base64.m.supfree.net##div.navigation
 base64decode.org##.ad_right_bottom
 base64decode.org##.ad_right_top
 baseball.yahoo.co.jp##.bb-modCommon05
+baseball.yahoo.co.jp##.sn-modAppText
+baseball.yahoo.co.jp,soccer.yahoo.co.jp,sports.yahoo.co.jp##div[class*="-modCommon0"] > div[class*="-overlay"]
 baseball.yahoo.co.jp,sports.yahoo.co.jp###prm_sapp
 bash.im##div[style*="width: 300px; height: 250px;"]
 basinnow.com,e-jpccs.jp,oxfordlearnersdictionaries.com#@##advertise
@@ -11413,6 +11415,8 @@ bushikaku.net##.ad__foot-lower
 bushikaku.net##.app-lead
 bushikaku.net##.banner
 bushikaku.net##.fixed-bottom-app-banner
+bushikaku.net##.footer_banner
+bushikaku.net##.index__app
 business-standard.com##+js(nano-setInterval-booster, (f-1), *, 0.001)
 business-standard.com#?#.show-on-mobile:has(> .stryadstp:only-child)
 business-standard.com,navitime.co.jp##.ad-height
@@ -15473,7 +15477,6 @@ haowj.com.cn##DIV.ad_top,DIV[id^="ad_pc_"]
 haoxxoo.com##.nrad1
 haoxxoo.com##.nrad2
 happy-travel.jp##.t
-happyend.life#@#.ads-core-placer
 happymag.tv###site-leader
 happymh.com##[src="https://c.nationaltcm.com/ad/tm1111dd.png"]
 happymod.com##.appx
@@ -16683,6 +16686,9 @@ iqiyi.com##a[href*=".banggo."]
 iqiyi.com##a[href*=".oppo."]
 iqiyi.com##a[id^="100000"]
 iqiyi.com##div[class^="ad-piclist-"]
+iqiyi.com##div[class^="video-slide_normal"]>a[href^="http"]:not([href*="iqiyi.com"]) div[class^="video-slide_row"]
+iqiyi.com##div[class^="video-slide_normal"]>a[href^="http"]:not([href*="iqiyi.com"])>div>img
+iqiyi.com##div[class^="video-slide_threeImagePages"]>a[href^="http"]:not([href*="iqiyi.com"])>div
 iqiyi.com##div[id^="1000000000"],div.crossAd.margin_b20,div#widget-indexad.ad-index,embed[src^="' + adurl + '"],#adflash,div.ad-wrapper.clearfix,[id^="flash1000000000"],div#addiv,div.s_main.liveTop_adv,div.leftAd,div.vip_rec_main,div[data-widget-3rdads="3rdads"],div.first_column,div#widget-jingdongAd,a.skin_link,div.rightAdv,div.banner,.banner980,.mzb_new,.m-downApp,.client_popup
 iqiyi.com##div[id^="div_theatre"]
 iqiyi.com##div[style^="z-index: 4200; position: absolute; left:"]
@@ -18065,6 +18071,8 @@ livechat-ero.net,kingautos.net,ranky-ranking.net,memo.onl.jp,daily-sun.com,home.
 livefans.jp,weblio.jp##.adBanner
 livego.cc###ad_nrz
 livejournal.com##.mdspost-aside__item--banner
+livejournal.com##[class*="categories"] + div[class]:has(> [class*="-commercial"])
+livejournal.com##[style$="width: 300px;"]
 livejournal.com##data-banner-place-id
 livejournal.com##div[id^="billboard_mobile_"]
 livelaw.in##.ad-popup-wrap
@@ -19182,6 +19190,7 @@ mangapedia.com#$#.PG_Nkeyword article .socialList { bottom: 0 !important; }
 mangareader.cc###myModal
 mangastream.com##.mobile-ad-home
 mangatoon.mobi##[class$="-download-bg"]
+mangaworld.ac###reader > .has-shadow.top-wrapper:has(> div > script)
 manhua.fzdm.com###weizhi
 manhua.weibo.com###p-nav-fix + .p-area.w980
 manhua123.net##.addg
@@ -22973,6 +22982,7 @@ soaphub.com##.sh-sh_postlist_2_home
 sobaidupan.com##.ad_728x90
 soccer-king.jp##div[style]:has(> div > div[id^="div-gpt-ad"])
 soccer.yahoo.co.jp##.sc-modAd
+soccer.yahoo.co.jp,sports.yahoo.co.jp##.sn-modAppBanner
 soccerdigestweb.com##div[class^="bnr_w3"]
 soccerstats.com###content_old > div[style*="padding-bottom:"]:not([id])
 soccerstats.com##div[style*="margin-top:"]:not([id]) div[style*="padding-bottom:"]
@@ -23248,14 +23258,17 @@ sports.ru##iframe[src^="http://www.sports.ru/desktop/special"]
 sports.sina.com.cn##a[href^="http://sports.sina.com.cn/download/"] > img
 sports.yahoo.co.jp###ad-smon
 sports.yahoo.co.jp###ydn-nm
-sports.yahoo.co.jp##.sn-modAppBanner
 sports.yahoo.co.jp##.sn-videoEmbed__banner
 sports.yahoo.co.jp##.sn-videoEmbed__credit
+sports.yahoo.co.jp##[class$="-modAd"]
 sports.yahoo.co.jp##div[class^="rg-modCommon"]:has(> div#ad-mmon)
 sports.yahoo.co.jp##div[class^="yf-modCommon"]
+sports.yahoo.co.jp##section[class*="-modCommon0"]:has(> div#ad-smon)
+sports.yahoo.co.jp##section[class*="-modCommon0"]:has(> div#im_low)
 sports.yahoo.co.jp#?#.hr-content > section[class^="hr-modCommon01"] #im_low_ad:upward(2)
 sportsbrief.com,legit.ng##.interscroller
 sportscn.com##[class$="ads"],[class^="ad"],[height="160"],[height="50"],.bnr,#topbanner
+sportsnavi.ht.kyodo-d.jp##.sn-modAd
 sportsnavi.ht.kyodo-d.jp,soccer.yahoo.co.jp,baseball.yahoo.co.jp,sports.yahoo.co.jp##.sn-modAppCarousel
 sportsnavi.ht.kyodo-d.jp,sports.yahoo.co.jp,baseball.yahoo.co.jp,soccer.yahoo.co.jp##.sn-modBanner
 sportsv.net##.adv01
@@ -28480,6 +28493,7 @@ zzzyk.com###Tinfo
 ||360.cn/int/getadurls?
 ||360.cn/popup/popinfo/
 ||360114.xyz^
+||3601880.xyz^
 ||360600.xyz^
 ||360640.com^
 ||360buyimg.com$domain=73thz.com
@@ -29660,6 +29674,7 @@ zzzyk.com###Tinfo
 ||8341.store^
 ||84232.com^
 ||8456.xyz^
+||845d6bbf60.com^
 ||8499136.com^
 ||8499683.com^
 ||84f101d1bb.com^
@@ -29979,6 +29994,7 @@ zzzyk.com###Tinfo
 ||977878.xyz^$document,popup
 ||978655.online^
 ||9795x.com^
+||97b448.xyz^$document,popup
 ||97bike.com^
 ||97kpz.com/js/bbk/g.js
 ||98.126.219.*/ads/
@@ -30585,6 +30601,7 @@ zzzyk.com###Tinfo
 ||ad-stir.com^
 ||ad-survey.com^
 ||ad-survey.com^$third-party
+||ad-tech.ru^$third-party
 ||ad-x.co.uk^
 ||ad.
 ||ad.12306.cn/res/*.html
@@ -35451,7 +35468,6 @@ zzzyk.com###Tinfo
 ||cdn.auditude.com^
 ||cdn.awsbj0.fds.api.mi-img.com/aos-pro/hm-analysis-sdk^$third-party
 ||cdn.awsbj0.fds.api.mi-img.com/aos-pro/upload^
-||cdn.b2.ai^$third-party
 ||cdn.batmobi.net^
 ||cdn.bootcss.com/flv.js/1.3.3/flv.min.js
 ||cdn.bootcss.com/layer/2.1/layer.js$domain=ganbi66.com
@@ -37887,6 +37903,7 @@ zzzyk.com###Tinfo
 ||dd0122893e.com^
 ||dd1.diymianmo.com^
 ||dd112233dd.com^
+||dd2270.xyz^$document,popup
 ||dd5889a9b4e234dbb210787.com^
 ||dd6364.com/js/777/
 ||dd667788dd.com^
@@ -39826,6 +39843,7 @@ zzzyk.com###Tinfo
 ||endorsementgrasshopper.com^
 ||endorsementmart.com^
 ||endorsesmelly.com^
+||endowmentoverhangutmost.com^
 ||endurableshop.com^$third-party
 ||endurancetransmitted.com^
 ||endymehnth.info^
@@ -40910,6 +40928,7 @@ zzzyk.com###Tinfo
 ||flashwing.net^$third-party
 ||flatbedbowings.top^
 ||flatteringscanty.com^
+||flawerosion.com^
 ||flaweyesight.com^
 ||flctbg.com^
 ||fleckfound.com^
@@ -50536,6 +50555,7 @@ zzzyk.com###Tinfo
 ||mp999.net/wp-content/uploads/*zgg
 ||mpanyinadi.info^
 ||mpb1.iteye.com^
+||mpcrvcbwdouo.com^
 ||mpfqphqf.com^
 ||mpgsqk.xyz^
 ||mphcrjth.xyz^
@@ -55866,6 +55886,7 @@ zzzyk.com###Tinfo
 ||rkds2.icu^
 ||rkgbqn.icu^
 ||rkgwzfwjgk.com^
+||rkifguxul.com^
 ||rkkhuwl.cn^
 ||rkohksa.cn^
 ||rksnqq.com^
@@ -62796,6 +62817,7 @@ zzzyk.com###Tinfo
 ||wfyqc.com^
 ||wganilgle.cyou^
 ||wgdacc.com^
+||wggqzhmnz.com^
 ||wghjq.cn^
 ||wgidskie.top^
 ||wglbx.ltd^
@@ -63326,6 +63348,7 @@ zzzyk.com###Tinfo
 ||wtraff.com^
 ||wttuuyd.cn^
 ||wty007.xyz^
+||wtynalolraz.com^
 ||wtyusie.top^
 ||wu3wl2g7.cn^
 ||wubizigeng.com^
@@ -66439,6 +66462,7 @@ zzzyk.com###Tinfo
 ||zq9a.top^
 ||zqg315a.cn^
 ||zqiew.xyz^
+||zqpztal.com^
 ||zqsj.xyz^
 ||zqwlkj.cn^
 ||zqzq*.com:*/da.aspx
