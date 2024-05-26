@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-05-25 20:12:25
-! Total count: 66708
+! Version: 2024-05-26 08:14:33
+! Total count: 66714
 
 ###ADtip
 ###AdBlockDialog
@@ -105,6 +105,9 @@
 ###adv-3
 ###adv-fixed-square
 ###adv_wrap_hh
+###advads_ad_widget-18
+###advads_ad_widget-19
+###advads_ad_widget-8
 ###advertisementjsalert
 ###adx_cggp
 ###alert_windows > .q-dialog__backdrop
@@ -606,6 +609,7 @@
 ##.ads-pholder
 ##.ads100
 ##.ads200
+##.ads300_600-widget
 ##.ads_all > .ads_w
 ##.ads_desktop
 ##.ads_mobile
@@ -772,6 +776,12 @@
 ##.downcode[style^="position:fixed;z-index:1000;top:200px;"]
 ##.dplayer > .tips
 ##.duilian > .leftd
+##.e3lan
+##.e3lan-top
+##.e3lan-widget-content
+##.e3lan300-100
+##.e3lan300-250
+##.e3lan300_250-widget
 ##.ec-ad
 ##.edtj
 ##.eis_muad
@@ -2440,7 +2450,6 @@
 ##div[id][style="width: 100%;"] > div > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[id][style="width: 100%;"] > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[id][style="width: 100%;"] > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
-##div[id^="_vdo_ads_player_ai_"]
 ##div[id^="a"] > a[target="_blank"][style="margin-top:3px;"]
 ##div[id^="a-loading-"] > span
 ##div[id^="ad-div-"]
@@ -2449,13 +2458,8 @@
 ##div[id^="ad_thread"]
 ##div[id^="adngin-"]
 ##div[id^="adrotate_widgets-"]
-##div[id^="ads250_250-widget-"]
-##div[id^="ads300_100-widget-"]
-##div[id^="ads300_250-widget-"]
-##div[id^="ads300_600-widget-"]
 ##div[id^="adspot-"]
 ##div[id^="adv-"].adv
-##div[id^="advads_ad_"]
 ##div[id^="crt-"][style]
 ##div[id^="dfp-ad-"]
 ##div[id^="div-ads-"]
@@ -5361,7 +5365,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /source/plugin/yw_alertlogin/*
 /sp/delivery/js.php
 /spc.php
-/spcjs.php
 /speee-ad.
 /splashes^
 /sponsor-banner.jpg
@@ -7494,7 +7497,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 ://dreemdmbabys.oss-cn-
 ://js.static.*/share/*.js$third-party
 ://js.static.*ping*
-://news-*/process.js?id=$third-party
 ://o0e.ru^$third-party
 ://oascentral.
 ://promo.$~media,third-party,domain=~myshopify.com|~promo.com|~shopifycloud.com|~slidely.com
@@ -8639,6 +8641,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 @@||jjjgame.com/plus/ad_
 @@||jjkmn.com^$generichide
 @@||jlthjy.com^$generichide
+@@||jokerly.com/Okidak/adSelectorDirect.htm?id=$document,subdocument
 @@||jokerly.com/Okidak/vastChecker.htm$document,subdocument
 @@||joyk.com^$generichide
 @@||jpush.cn^$domain=jiguang.cn
@@ -8792,7 +8795,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 @@||msn.wrating.com/a1.js
 @@||msn.wrating.com^
 @@||mssl.fwmrm.net/*/AdManager.js?$domain=nhl.com|dtmts.com
-@@||mui.com^$generichide
 @@||music.amazon.$generichide
 @@||muzlan.top/ads/banner.png
 @@||muzlan.top^$generichide
@@ -9077,7 +9079,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 @@||slack.com^$generichide
 @@||slashdot.org/story^
 @@||slm-assets.secondlife.com/assets/*$image
-@@||smallseotools.com^$generichide
 @@||smedia2.intoday.in/aajtak_pwapp$script
 @@||smsonline.cloud^$generichide
 @@||smtcaw.com^$generichide
@@ -11295,7 +11296,6 @@ box.hyds360.com##.sdmimg
 boxnovel.baidu.com##.wechat-wrapper
 boxofficeturkiye.com##.ads_320x50-sticky
 boxthislap.org##img[width="728px"]
-boxthislap.org,unknowncheats.me##img[width="300px"]
 boyfriendtv.com##.adblock
 boylov.xyz,boylove.cc###fake_avivid_waterfall_webpush
 boylov.xyz,boylove.cc##.owl-carousel
@@ -11318,8 +11318,8 @@ bqprime.com##div[class^="ad-with-placeholder"]
 bqprime.com##div[class^="mobile-bottom-sticky"]
 bragazeta.ru###m-b-delevery
 brainly.co.id##.brn-ads-mobile-container
-bramptonguardian.com,guelphmercury.com,insideottawavalley.com,niagarathisweek.com,therecord.com,thespec.com,thestar.com,wellandtribune.ca##.adLabelWrapper
-bramptonguardian.com,insideottawavalley.com,therecord.com,thestar.com,wellandtribune.ca##.adLabelWrapperManual
+bramptonguardian.com,guelphmercury.com,insideottawavalley.com,niagarafallsreview.ca,niagarathisweek.com,thepeterboroughexaminer.com,therecord.com,thespec.com,thestar.com,wellandtribune.ca##.adLabelWrapper
+bramptonguardian.com,insideottawavalley.com,niagarafallsreview.ca,thepeterboroughexaminer.com,therecord.com,thestar.com,wellandtribune.ca##.adLabelWrapperManual
 brandkagu-outlet.net##.flo_ban
 brandkagu-outlet.net#$#.flo_head { display: none !important; }
 brandkagu-outlet.net#$#div.uniqset div#Header { padding-top: 0 !important; }
@@ -21396,7 +21396,6 @@ pornhub.com##.topAdContainter
 pornhub.com##a[href^="https://www.uviu.com"]
 pornhub.com##div.adContainer.clearfix
 pornhub.com##div.topAdContainter
-pornhub.com##div[class="video-wrapper"] > .clear.hd:has(.adsbytrafficjunky)
 pornhub.com#@#div > [style*="width: 100%;"]:first-child
 pornhub.com$$div[class="bottomNav clearfix"]
 pornhub.com,pornhub.org,pornhub.net##+js(set-constant, abp1, 0)
@@ -22482,6 +22481,7 @@ secretmine.net###main-content > br
 secretmine.net###main-content > center
 secretmine.net##.background-cover
 secretmine.net##div[id^="secre-"]
+securityaffairs.com##.add-banner
 seehd.co##.J_advert,.tac + table
 seehd.so##.header_wrap + .tac + table[align="center"]
 seehd.so##.tac + table
@@ -24660,7 +24660,6 @@ unite.pvpoke.com###nitro-unite-sidebar-right
 universfreebox.com###megaban-head-moneytag
 universfreebox.com###pave-ad-mobile-in-article
 universfreebox.com###taboola-mobile-below-article-thumbnails
-unknowncheats.me###bab
 unpkg.com/aladug/*.js
 unsplash.com#?#div[data-test="search-photos-route"] div[style^="--column-gutter:"] > div[class] > figure + div:has(> div + footer)
 unsplash.com#?#div[style^="--column-gutter:"] > div[style^="--row-gutter:"] > div:first-child:has(> figure a + div > span)
@@ -29083,6 +29082,7 @@ zzzyk.com###Tinfo
 ||59kaixuan.com^
 ||5axxw.com/extends/ad/
 ||5c.com.cn^
+||5ceea3.xyz^$document,popup
 ||5dm.tv/html/5dma.jpg
 ||5dm.tv/html/5dmm.jpg
 ||5dmail.net/image/$object
@@ -31718,7 +31718,6 @@ zzzyk.com###Tinfo
 ||alfa-track.info^
 ||alfa-track.info^$document
 ||alfa-track.info^$popup
-||alfasense.com^
 ||alfelixstownrusis.info^
 ||alfpair.com^
 ||algg.site^
@@ -34666,7 +34665,6 @@ zzzyk.com###Tinfo
 ||brfgbn.xyz^
 ||brfvyrrp.com^
 ||brick.xhamster.com^
-||brick.xhamster.desi^
 ||bridalplums.com^
 ||brideshieldstaircase.com^
 ||bridgetnbe.com^
@@ -35939,7 +35937,6 @@ zzzyk.com###Tinfo
 ||chirui.net^
 ||chitchooms.net^
 ||chitika.com^
-||chitsnooked.com^
 ||chiuhua.com.cn^
 ||chixingkeji.com^
 ||chiyan.group^
@@ -37081,9 +37078,9 @@ zzzyk.com###Tinfo
 ||createssque.club^
 ||creative-serving.com^
 ||creative.imagetwistcams.com^$subdocument
-||creative.kbnmnl.com^
 ||creative.live.javhdporn.net^
 ||creative.myavlive.com^
+||creative.ohmycams.com^
 ||creative.stripchat.com^
 ||creativecdn.com^
 ||creativefix.pro^
@@ -42787,6 +42784,7 @@ zzzyk.com###Tinfo
 ||gw.m.163.com/nc-main/api/v1/hqc/no-repeat-hot-list
 ||gw069.com^
 ||gw1jvhs.com^
+||gw2cddpt2hao.asia^
 ||gwaaz.cn^
 ||gwallet.com^
 ||gwbnsh.net.cn/hd/unicom/ad.html
@@ -44471,6 +44469,7 @@ zzzyk.com###Tinfo
 ||iask.qq.com^
 ||iask.sina.com.cn/s-b/mxbg
 ||iatf16949.pw^
+||ibaglhc.icu^
 ||ibaiducdn.com/Public/Assets/js/hz_
 ||ibeating.top^
 ||iberiavihuela.guru^
@@ -46795,6 +46794,7 @@ zzzyk.com###Tinfo
 ||jxuhurp.icu^
 ||jxuu.online^
 ||jxvyrv.xyz^
+||jxwqu.cn^
 ||jxyy.site^
 ||jy.zhongxues.com^
 ||jy135.com/js/pubuliu.
@@ -52233,6 +52233,7 @@ zzzyk.com###Tinfo
 ||onservantasr.info^
 ||onx8.com/theme/tange/add/
 ||onx8.com/zb_users/theme/ydgreen/style/ad/
+||onxeacj.cn^
 ||onxtxdm.xyz^
 ||onychinferous.top^
 ||onzazqarhmpi.com^
@@ -53330,6 +53331,7 @@ zzzyk.com###Tinfo
 ||pinyuege.net/template/pinygm/public/js/
 ||piouspoemgoodnight.com^
 ||pipaffiliates.com^
+||pipaffiliates.com^$popup
 ||pipc.top^
 ||pipetskeloid.com^
 ||pipi.cn/player/
@@ -58242,6 +58244,7 @@ zzzyk.com###Tinfo
 ||sssgao999.com^
 ||sssvd.china.com^
 ||sssxwsry.com^
+||ssylieb.top^
 ||ssyy881.com/zz/
 ||ssznrs.com^
 ||st.work.ua/js/app-banner-
@@ -61379,6 +61382,7 @@ zzzyk.com###Tinfo
 ||uqueae.xyz^
 ||uquholhm.cn^
 ||uqwbcm.xyz^
+||uqydcs.xyz^
 ||uqykjig.cn^
 ||uranicargine.top^
 ||uranus.sogou.com^
@@ -66321,6 +66325,7 @@ zzzyk.com###Tinfo
 ||zlreqxe.xyz^
 ||zlsynmlq.fun^
 ||zlsyuulq.cam^
+||zltndp.xyz^
 ||zlujomk.cn^
 ||zlvlciv.xyz^
 ||zlyhslx.icu^
@@ -66507,6 +66512,7 @@ zzzyk.com###Tinfo
 ||zunchengmaoyi.cn^
 ||zunmi.cn^
 ||zunnnh.xyz^
+||zunsoach.com^
 ||zuoai99hair.com^
 ||zuofang05.com/template/mytheme/statics/image/1/
 ||zuolgc.cn^
