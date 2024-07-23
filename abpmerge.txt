@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-07-23 08:18:38
-! Total count: 60961
+! Version: 2024-07-23 20:14:12
+! Total count: 60993
 
 ###ADtip
 ###AdBlockDialog
@@ -699,6 +699,8 @@
 ##.ampexcoVideoPlayer
 ##.anniversary-wrap-2018
 ##.apd-footer
+##.apd-home
+##.apd-right
 ##.app-ad-container-desktop
 ##.appBanner:not(body)
 ##.appdownload_ad + .hider
@@ -1812,6 +1814,7 @@
 ##a[href*=".kekexc.com/"]
 ##a[href*=".kluvcc.com/"]
 ##a[href*=".ktvxn.com/"]
+##a[href*=".labsda.com"]
 ##a[href*=".las88889999.com:"]
 ##a[href*=".meta-hh.com/"]
 ##a[href*=".meta-jt.com/"]
@@ -4137,7 +4140,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /adblocker_message_
 /adbot.
 /adcg/*
-/adcheck.
 /adclient*
 /adcms/js/*
 /adcode.hkddm.com/*
@@ -4159,7 +4161,9 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /adfx.loader.bind.js
 /adhelper.js
 /adifm_
+/adimage.$image,script,stylesheet
 /adimage.bokee.com/*
+/adimages.$script
 /adimages/*
 /adimg/*
 /adinfo?
@@ -4467,6 +4471,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /ckip.
 /click.php
 /clickad*
+/clickadu300.aspx
 /clicktotal/ClickTotal.js
 /clys.js?2020
 /cm-pop-up-banners-
@@ -9202,6 +9207,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 @@||wwads.cn/js/makemoney.js$domain=nodejs.cn
 @@||www.avtbf.com/*.css$domain=avtbf.com
 @@||www.bilibili.com/html/iframemessage.html
+@@||www.exploader.net/js/swipe-right-20171229.js|$script,~third-party
 @@||www.fosshub.com/media/js/adblock.js$first-party
 @@||www.gamersky.com/gsinc/$subdocument
 @@||www.google-analytics.com^$domain=myqqjd.com
@@ -9326,7 +9332,7 @@ _fioiwhfo_
 _float_fuo.js
 _good_id=
 _gpt_ads.
-_images/ad.
+_images/ad.$image
 _left_picshow
 _naimabdd_
 _popAds.
@@ -10026,6 +10032,7 @@ artsandculture.google.com##.iMnvWc
 arukereso.hu##.mobile-application
 arzamas.academy##.ra__heading .ra__app__btns
 arzamas.academy#$#body { margin-top: 0! important; }
+as-web.jp##.ASW_sp_header
 as.ro###digitalag-sticky
 asagei.com##.popular-article-side ~ div[style^="text-align"]:has(> a[href] > img[src*="images/bn/"])
 asahi.co.jp###jp_abc_sp_article_underarticle
@@ -11238,6 +11245,7 @@ boredpanda.com##.bp-pwa-promotion-container
 boredpanda.com,hackread.com##.get-app
 boroboromi.com##.mod-ad
 bostonagentmagazine.com##.prm1_w
+botanica-media.jp##div[id^="BOTANICA_SP_"]
 bournemouthecho.co.uk,dorsetecho.co.uk,oxfordmail.co.uk###piano-floating-bottom-banner
 bouweenpc.nl###header-banner
 bowenislandundercurrent.com,coastreporter.net,delta-optimist.com,richmond-news.com,squamishchief.com,tricitynews.com##.ga-ext
@@ -14098,6 +14106,7 @@ finance.yahoo.co.jp#?#main > section#artcldtl + div[class^="_"] > div[id^="ad_"]
 finance.yahoo.com###mrt-node-Col1-1-GeminiBrokerBtnsMobileWeb
 finance.yahoo.com##.ys-mobileFeaturedAd
 finance.yahoo.com#$#html { overflow: auto !important; }
+financefeeds.com##div[id^="tdm-popup-modal-td"]
 financerites.com##div[id^="__vliadb"]
 financialexpress.com##.ad-bg-container
 financialexpress.com##div[class^="adbox"]
@@ -15771,6 +15780,7 @@ homedepot.com##.browse-search__pod:has([id^="plp_pod_sponsored"])
 homedepot.com##[id*="sponsored"]
 homerun.re,strikeout.co,vipbox.sx,vipleague.ch,vipleague.co,vipleague.is,vipleague.me##span[id][style] > div[id]:first-child:last-child
 homes.co.jp##.mod-appDownload
+homes.co.jp##.mod-smartAppBanner
 homes.co.jp##aside[aria-labelledby="app-guidance-heading"]
 hometheaterreview.com#$##div_block-5-101336 { height: auto !important; }
 homeworklib.com#?#.span4 > div.box:has(> a[href="https://www.homeworklib.com/links/homework-android-app"])
@@ -17494,6 +17504,7 @@ kayouzhan.com##DIV.fmright,DIV.banner_2,DIV#code_box,DIV.ad
 kb20.cc###content_pic
 kbb.com##.ads__container
 kbb.com##.ads__container-kbbLockedAd
+kc.linksgen.com,kimcartoon.li,kisscartoon.se##[style="margin: 0px auto; text-align: center; overflow: hidden; width: 610px;"]
 kcili.com###hm_cpm_show
 kdhome.net###bottomadv
 kdhome.net##.adv2
@@ -17547,7 +17558,6 @@ kikkoman.co.jp##.application-banner
 kikkoman.co.jp##.info-app-tsushin
 kimcartoon.li###hideAds
 kimcartoon.li##.kcAds1
-kimcartoon.li##[style="margin: 0px auto; text-align: center; overflow: hidden; width: 610px;"]
 kimo.ma##.adb
 kinarino.jp###js-appeal-top-banner
 kinarino.jp##+js(set-cookie-reload, hide_app_banner, 1)
@@ -19826,6 +19836,7 @@ mrmoneymustache.com#@#.custom-ad
 mrs.living.jp##.banner-area
 mscbsc.com##.bao1
 msdmanuals.com##.box--marketing
+msdmanuals.com##div[data-testid="marketing-block-container"]
 msdn.hk##[class^="gg"],.adsbygoogle
 mse.360.cn###banner0
 mse.360.cn###banner_2
@@ -23491,7 +23502,6 @@ sydneytoday.com##.mygad
 sydneytoday.com##.news-list > .row > .col-xs-12
 sydneytoday.com##div[style$="-144px;top: 115px;"]
 sydsvenskan.se##.ad-welcome
-symbaloo.com##div[data-test="homepageBanner"]
 symbolab.com###androidLink
 symbolab.com###googleAdSenseHomepage
 symbolab.com###itunesLink
@@ -25341,8 +25351,6 @@ wezhicms.com##.activity
 wezhicms.com#?#.card-main:-abp-has(.waimai-item-img)
 wezz-y.com##div[class^="admain"]
 wghai.net##.a_xiu_h,#sc-superman-ad,.a_xiu_t,.a_xiu_pt,.a_xiu_pb,.a_xiu_pr
-wgnsradio.com##.bw-special-image
-wgnsradio.com##.bw-special-image-wrapper
 whatsmyip.org#?#main > section:has(> div.biglinks)
 whcykj.cn###BDBridgeInviteWrap
 whcykj.cn###InviteContainerl
@@ -26475,9 +26483,9 @@ y8.com##.ads
 ya.ru###search-result > div.serp-item:has(> div.Organic-App)
 ya.ru##services-feed div.banner
 ya.ru,yandex.*##.DirectStripe
+ya.ru,yandex.*##.content__left > ul#search-result > li:has(> div.organic > div.OrganicTitle > a[href^="https://ya.ru/search/_crpd/"])
 ya.ru,yandex.*##.serp-list__page > div.serp-item:has(a[noredirecturl^="https://play.google.com/store/apps/details?"])
 ya.ru,yandex.*##div[class^="DistrSmartbanner"]
-ya.ru,yandex.*##div[class^="serp-list"] > div.serp-item:has(> div[data-bem*="organic"] > div[class^="Organic"] > div[class^="VanillaReact"] > a[data-event-required])
 ya.ru,yandex.*#$?##search-result > li:has(span:contains(/[PРeеkклaаmмaа]{7}/)) { remove: true; }
 ya.ru,yandex.*#?#.SearchBlock:has(> div.DirectStripe)
 yadi.sk##.app-promo-banner
@@ -28221,6 +28229,7 @@ zzzyk.com###Tinfo
 ||288family.club^
 ||2898.com/index/flowexchange/getGoods?
 ||28acglz.com^
+||28d287b9.xyz^$document,popup
 ||28d591da.xyz^$document,popup
 ||28hse.com/adsman/www/images/
 ||28kys.com/92kviptupian/
@@ -28658,10 +28667,12 @@ zzzyk.com###Tinfo
 ||44q.com^
 ||44r9fl.xyz^
 ||453130fa9e.com^
+||45496fee.xyz^$document,popup
 ||4567.org^$third-party
 ||466128.com^
 ||466c4d0f.xyz^$document,popup
 ||469716.top^
+||46bd8e62a2.com^
 ||46f4vjo86.com^
 ||46pj.com/go.js
 ||46pj.com/nr.js
@@ -29538,7 +29549,6 @@ zzzyk.com###Tinfo
 ||7edown.com/newbd/$script,document
 ||7edown.com/show/complete.js$script
 ||7ee4c0f141.com^
-||7fc8.site^$document,popup
 ||7g9m3r.com^
 ||7hjb8.com^*.php
 ||7j4tpio.com^
@@ -30605,6 +30615,7 @@ zzzyk.com###Tinfo
 ||adcel.vrvm.com^
 ||adcell.com^$third-party
 ||adcenter-api.cashwalk.co^
+||adcheck.about.co.kr^
 ||adchina.cc^
 ||adclick.tencentmusic.com^
 ||adcloud.jp^
@@ -30994,6 +31005,7 @@ zzzyk.com###Tinfo
 ||adslvseed.qq.com^
 ||adsmind.
 ||adsmind.gdtimg.com^
+||adsmind.ugdtimg.com^
 ||adsmis.
 ||adsmo.ru^
 ||adsmobila.com^$third-party
@@ -31021,8 +31033,6 @@ zzzyk.com###Tinfo
 ||adstat.izuiyou.com^
 ||adstats.
 ||adstats.tencentmusic.com^
-||adstean.com^
-||adstean.com^$popup
 ||adsterra.com^
 ||adstextview.qq.com^
 ||adstore-1252524079.file.myqcloud.com^
@@ -31945,13 +31955,17 @@ zzzyk.com###Tinfo
 ||api*.batmobil.net^
 ||api*.bidmachine.io^
 ||api-a.op-mobile.opera.com^
+||api-access.pangolin-sdk-toutiao-b.com^
 ||api-access.pangolin-sdk-toutiao.com/api/ad^
+||api-access.pangolin-sdk-toutiao.com^
+||api-access.pangolin-sdk-toutiao1.com^
 ||api-ad-adapter.wps.com^
 ||api-ad-callback.mobiuspace.net
 ||api-ad.sensetime.com/sensear/v2/sdk/*$third-party
 ||api-adservices.apple.com^
 ||api-analytics-cn.huami.com^
 ||api-analytics.huami.com^
+||api-htp.beizi.biz^
 ||api-read.facebook.com/restserver.php?api_key=$third-party
 ||api-shoulei-ssl.xunlei.com/flowhub/v1/slots:batchGet
 ||api-shoulei-ssl.xunlei.com^
@@ -32165,6 +32179,7 @@ zzzyk.com###Tinfo
 ||applog.reader.qq.com^
 ||applog.uc.cn^
 ||applog.ucdns.uc.cn^
+||applog.zijieapi.com^
 ||applovin.com^
 ||appmetrica.yandex.ru^
 ||appnext-a.akamaihd.net^
@@ -33235,6 +33250,7 @@ zzzyk.com###Tinfo
 ||bea-s.dinghuoche.com^
 ||beacon-api.aliyuncs.com/beacon/fetch/config/byappkey
 ||beacon-api.aliyuncs.com^
+||beacon.qq.com^
 ||beacon.sina.com.cn^
 ||beacon.tingyun.com^
 ||beadbears.com^$third-party
@@ -33311,6 +33327,7 @@ zzzyk.com###Tinfo
 ||bekco.xyz^
 ||bekmhvbb.xyz^
 ||belatedsafety.pro^
+||beliketheappyri.info^
 ||belindanbd.com^
 ||bellatrixmeissa.com^$popup
 ||bellessb.com^
@@ -33574,6 +33591,7 @@ zzzyk.com###Tinfo
 ||birglucy.xyz^
 ||birjkhm.cn^
 ||birthcaker.cn^
+||birthday3452.fun^
 ||birtw.cn^
 ||bis8j.com^
 ||bisafniv.space^
@@ -33956,6 +33974,7 @@ zzzyk.com###Tinfo
 ||brewsuper.com^
 ||brfgbn.xyz^
 ||brfvyrrp.com^
+||brfzpaffgni.com^
 ||bridalplums.com^
 ||bridgetnbe.com^
 ||briefaccusationaccess.com^
@@ -38508,7 +38527,6 @@ zzzyk.com###Tinfo
 ||everyonepiano.cn/Public/*0x
 ||evgaow.xyz^
 ||evidhjksdtgyxrh.xyz^
-||evnsotpmavrwp.com^
 ||evrae.xyz^
 ||evrquvhrwr.com^
 ||evscnfj.cn^
@@ -40425,6 +40443,7 @@ zzzyk.com###Tinfo
 ||grkhhdxsimfif.com^
 ||grndhkd.cn^
 ||groapeeque.com^
+||gromore.pangolin-sdk-toutiao.com^
 ||grondrens.com^
 ||groovinads.com^$third-party
 ||grouchypush.com^$third-party
@@ -40741,6 +40760,7 @@ zzzyk.com###Tinfo
 ||gzzza.com/html/
 ||h-adashx.ut.taobao.com^
 ||h.baminw.cn^
+||h.trace.qq.com^
 ||h04.xyz^
 ||h06.xyz^
 ||h08.xyz^
@@ -40993,7 +41013,6 @@ zzzyk.com###Tinfo
 ||hbkunye.com^
 ||hblarn.xyz^
 ||hblinwei.com^
-||hbloveinfo.com^$popup
 ||hbmcfcd.cn^
 ||hbnygj.com^
 ||hboav.com/guga/
@@ -43271,6 +43290,7 @@ zzzyk.com###Tinfo
 ||jakisity.top^
 ||jalapamaro.com^
 ||jamierace.com^
+||janapi.jd.com^
 ||jandan.net/static/sos/recreate-games.gif
 ||jandan.net/static/ss/
 ||jandan.net^*/3kbw2.png
@@ -43880,7 +43900,6 @@ zzzyk.com###Tinfo
 ||jrrxbz.net^
 ||jrszhibo.com/m/js/lrtk.js
 ||jrtlisa.top^
-||jrvrkzrbkqqqj.top^
 ||jrysogsia.uno^
 ||jrzeiotwaq.com^
 ||jrzj.com/images/bgright_ad.jpg
@@ -45774,6 +45793,7 @@ zzzyk.com###Tinfo
 ||lofter.com/mailEntry.do?
 ||lofter.com/mailEntry.do?blogad
 ||lofter.com/mailEntryMobile.do
+||log-api.pangolin-sdk-toutiao-b.com^
 ||log-api.pangolin-sdk-toutiao.com^
 ||log-sdk.ksapisrv.com^
 ||log-stats.weathercn.com^
@@ -45801,6 +45821,7 @@ zzzyk.com###Tinfo
 ||log.tpns.tencent.com^
 ||log.vdisk.cn^
 ||log.web.kugou.com^
+||log.zijieapi.com^
 ||log.zongheng.com^
 ||log1.17173.com^
 ||log1.kuwo.cn^
@@ -47435,6 +47456,7 @@ zzzyk.com###Tinfo
 ||msnignsx.xyz^
 ||msnoownmx.fun^
 ||mssdhde.cn^
+||mssdk.volces.com^
 ||mssheng.com^
 ||mssmkj.com^
 ||msstatic.com/huya/main/img/mc-recom_
@@ -47558,6 +47580,7 @@ zzzyk.com###Tinfo
 ||mvgucp.com^
 ||mvirkw.xyz^
 ||mvlkvth.cn^
+||mvmzlg.xyz^
 ||mvng.cn^
 ||mvpqrydt.xyz^
 ||mvusq.xyz^
@@ -47690,7 +47713,6 @@ zzzyk.com###Tinfo
 ||myzwqwe12.com^
 ||myzwqwe12.com^$third-party
 ||mzamin.com/advert/
-||mzcaiegjmuwfd.com^
 ||mzcd.xyz^
 ||mzcsdf.com^$third-party
 ||mzelzfnj.xyz^
@@ -48628,6 +48650,7 @@ zzzyk.com###Tinfo
 ||oiqbdwjkl.com^
 ||oiqwnfk.com^
 ||oisafnik.space^
+||oiu09.cn^
 ||oiunga.com^
 ||oiuqwppcsdf.com^
 ||oivgqnt.cn^
@@ -49128,6 +49151,7 @@ zzzyk.com###Tinfo
 ||p2p.v.yyclouds.com/crossdomain.xml
 ||p2peye.com/ajax.php?mod=ad&
 ||p2peye.com/ajax.php?mod=advertisement&
+||p3-be-pack-sign.pglstatp-toutiao.com^
 ||p3tt.com^
 ||p4f52tll.cn^
 ||p4p.sina.com.cn^
@@ -49498,6 +49522,7 @@ zzzyk.com###Tinfo
 ||pgdt.gtimg.cn/gdt/
 ||pgdt.gtimg.cn/gdt/$domain=info.3g.qq.com
 ||pgdt.gtimg.cn^
+||pgdt.ugdtimg.com^
 ||pgght17.com^
 ||pghwwjd.com^
 ||pgl7.cn^
@@ -49987,6 +50012,7 @@ zzzyk.com###Tinfo
 ||pr-bh.ybp.yahoo.com^
 ||pr.comet.yahoo.com^
 ||pr88vhg.com^
+||practice3452.fun^
 ||pramenterpriseamy.com^
 ||prdohgp.cn^
 ||prdredir.com^
@@ -50223,6 +50249,7 @@ zzzyk.com###Tinfo
 ||pubfuture.com^$third-party
 ||pubgalaxy.com^
 ||pubguru.net^
+||public.gdtimg.com^
 ||public.juxia.com/js/juxia.js
 ||public.wlbaike.com^
 ||public6.com^
@@ -50266,6 +50293,7 @@ zzzyk.com###Tinfo
 ||pupspu.com^
 ||pupudy.com/images/wxrj.gif
 ||puqer.cn^
+||puraquealtered.shop^
 ||purchasesuggestion.com^$third-party
 ||purinesboldo.com^
 ||purpleads.io^
@@ -50587,7 +50615,6 @@ zzzyk.com###Tinfo
 ||qhscsu.xyz^
 ||qhtdmlf.xyz^
 ||qhvws.com^
-||qhwyoat.com^
 ||qhx1h2g.com^
 ||qhxtzwf.cn^
 ||qhyy8.com/template/default_wap/html/public/img/*.gif
@@ -51163,6 +51190,7 @@ zzzyk.com###Tinfo
 ||qzpmx.cn^
 ||qzqd2.com^
 ||qzqyw.cn^
+||qzs.gdtimg.com^
 ||qzs.qq.com/qzone/biz/
 ||qzsfmbt.cn^
 ||qzthueo.cn^
@@ -51571,7 +51599,6 @@ zzzyk.com###Tinfo
 ||rgauwvaznptsx.com^
 ||rgbsl.com^
 ||rgdcrt.xyz^
-||rgddist.com^
 ||rgeredrubygs.info^
 ||rgfqcly.cn^
 ||rggtt.top^
@@ -52388,9 +52415,11 @@ zzzyk.com###Tinfo
 ||sdk.adtiming.com^
 ||sdk.api.bjshcw.com^
 ||sdk.api.oaid.wocloud.cn^
+||sdk.beizi.biz^
 ||sdk.conf.igexin.com^
 ||sdk.duihuashijie.com^
 ||sdk.duihuashijie.com^$app=com.biquge.ebook.app
+||sdk.e.qq.com^
 ||sdk.gplayspace.com/appType.php
 ||sdk.jumpw.com/sdk/checkoutidentity
 ||sdk.look.360.cn/sdkv2/popconf?
@@ -52416,6 +52445,7 @@ zzzyk.com###Tinfo
 ||sdkm.w.inmobi.cn^
 ||sdkserver.op.hicloud.com/sdkserver^$app=com.huawei.hwvplayer.youku
 ||sdksp.video.qq.com^
+||sdktmp.hubcloud.com.cn^
 ||sdkv2.imaginationunwired.com^
 ||sdljvrf.cn^
 ||sdlmhb.com^
@@ -52536,8 +52566,6 @@ zzzyk.com###Tinfo
 ||serveraddr.service.kugou.com^
 ||serverbid.com^
 ||servetag.com^
-||servetean.site^
-||servetean.site^$popup
 ||servetraff.com^
 ||servg1.net^
 ||servh.net^
@@ -52577,6 +52605,7 @@ zzzyk.com###Tinfo
 ||sf*-ttcdn-tos.pstatp.com/img/web.business.image^
 ||sf-ads.io^
 ||sf2.net/a/index.
+||sf3-fe-tos.pglstatp-toutiao.com^
 ||sfacg.com/JS/New/j
 ||sfaxnqia.com^
 ||sfbixfd.cn^
@@ -52678,6 +52707,8 @@ zzzyk.com###Tinfo
 ||shareusads.com^
 ||shark.douyucdn.cn/app/douyu/res/com/annualfestival/*_bg.gif
 ||sharppatch.com^$third-party
+||shaugacakro.net^
+||shaugacakro.net^$popup
 ||shawljeans.com^
 ||shaxiq.com^
 ||shbdyx.com^
@@ -53434,6 +53465,7 @@ zzzyk.com###Tinfo
 ||soup.v.qq.com^
 ||soupoleums.com^
 ||soupteewhish.com^
+||soupy-user.com^
 ||southmoney.com/page/pc/
 ||southmoney.com/page/top
 ||southmoney.com^*/Inc/
@@ -53841,7 +53873,6 @@ zzzyk.com###Tinfo
 ||steepsquirrel.com^$third-party
 ||steepto.com^
 ||stelaiatokal.top^
-||stemboastfulrattle.com^$popup
 ||stepcattle.com^$third-party
 ||steppedengender.com^
 ||stepplane.com^$third-party
@@ -55054,8 +55085,10 @@ zzzyk.com###Tinfo
 ||tnc16-alisg.isnssdk.com^
 ||tnc16-useast1a.isnssdk.com^
 ||tnc3-aliec2.zijieapi^
+||tnc3-alisc1.zijieapi.com^
 ||tnc3-alisc1.zijieapi^
 ||tnc3-bjlgy.snssdk.com^
+||tnc3-bjlgy.zijieapi.com^
 ||tnc3-bjlgy.zijieapi^
 ||tnebxv.top^
 ||tnfhxszj.xyz^
@@ -56351,6 +56384,7 @@ zzzyk.com###Tinfo
 ||v-links.net^$third-party
 ||v-pack.net^
 ||v-vlog.cn^
+||v.adx.hubcloud.com.cn^
 ||v.cctv.com/flash/vd^
 ||v.center^$third-party
 ||v.irs01.com/hvt-cfg^$app=com.huawei.hwvplayer.youku
@@ -56369,6 +56403,7 @@ zzzyk.com###Tinfo
 ||v16rs.cn^
 ||v1gyb.xyz^
 ||v2.dakang-energy.com^
+||v2.gdt.qq.com^
 ||v2.uyan.cc^
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||v2ex.com/b/i^
@@ -56830,6 +56865,7 @@ zzzyk.com###Tinfo
 ||vozftn.xyz^
 ||vp.html5.qq.com^
 ||vpbbc.cn^
+||vpbpb.com^
 ||vpic.video.qq.com^
 ||vpie.net^
 ||vpie.net^$third-party
@@ -56844,7 +56880,6 @@ zzzyk.com###Tinfo
 ||vptjabo.cn^
 ||vpubmi.com^
 ||vpwizuj.icu^
-||vpwyehsh.com^
 ||vpzohx.xyz^
 ||vq1qi.pw^$third-party
 ||vq7736.com^
@@ -57361,7 +57396,6 @@ zzzyk.com###Tinfo
 ||whackresolved.com^
 ||whafwl.com^
 ||whaijoorgoo.com^
-||whaivoole.com^
 ||whakoxauvoat.xyz^
 ||whale123.com^$third-party
 ||whalepeacockwailing.com^
@@ -57394,8 +57428,6 @@ zzzyk.com###Tinfo
 ||whisperingcrib.com^$third-party
 ||whisperingsummit.com^$third-party
 ||whispermeeting.com^$third-party
-||whitepark9.com^
-||whitepark9.com^$popup
 ||whizzco.com^$third-party
 ||whizzerrapiner.com^
 ||whmhdz.xyz^
@@ -57728,6 +57760,7 @@ zzzyk.com###Tinfo
 ||wqshui.com^
 ||wqvbuj.icu^
 ||wqxp.online/qx6/php/qqcheck.php
+||wqyjkupqj.com^
 ||wqyloitd.cn^
 ||wqzyt.net^
 ||wr.yiyouliao.com^
@@ -60138,7 +60171,6 @@ zzzyk.com###Tinfo
 ||zbfiupq.cn^
 ||zbjimg.com/static/union/
 ||zblz.me^
-||zbmdbhhtgry.com^
 ||zbporn.com/ttt/
 ||zbpx.xyz^
 ||zbqmsc.com^
