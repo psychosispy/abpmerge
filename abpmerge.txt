@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-10-11 08:19:33
-! Total count: 62518
+! Version: 2024-10-11 20:15:46
+! Total count: 62532
 
 ###ADtip
 ###AdBlockDialog
@@ -8165,6 +8165,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 @@||cbjs.baidu.com/js/m.js$domain=fxpan.com|iyingdi.com|pic.tiexue.net
 @@||ccb.com^*^ad
 @@||ccllaa.com^$generichide
+@@||cdn-msp*.18comic*.*^
 @@||cdn-msp*.18comic.*^
 @@||cdn.adspirit.de^$domain=cdn.adspirit.de
 @@||cdn.ampproject.org/v0.js$domain=politnavigator.net
@@ -13350,6 +13351,7 @@ dzbhdm.net##a[href="https://www.dzbhdm.com/"] > img
 dzbhdm.net##a[href^="https://www.dzbhdm.com/news/"] > img[src^="https://www.dzbhdm.com/"]
 dzbhdm.net##img[width="950"]
 dzen.ru##.article-render-mobile__embed_embed-type_yandex-direct
+dzen.ru##.news-advert-column
 dzen.ru##.video-feed__doc2doc div[class$="__feed"] > div[class*="-video-card "] ~ div:not([class*="-video-card "])
 dzen.ru##.zenad-card-rtb
 dzen.ru##:matches-path(/media)div[class^="article-render-mobile"][class$="type_yandex-direct"]
@@ -13609,6 +13611,7 @@ english.tupaki.com##body #inside_post_content_ad_1_before
 enjoymore.fun##a[href*="urlto.pw"]
 enorth.com.cn##DIV.guanggao
 enorth.com.cn##div[class^="guanggao"]
+enostech.com##[class^="wp-image-41"]
 enread.com##.box > ul[style="width:100%;overflow:hidden;"]
 enread.com##.channel-nav > .back
 enread.com##td[width="326"][height="250"]
@@ -15662,6 +15665,7 @@ hinata.me##+js(remove-class, show-app-banner, div[class^="Header__StyledComponen
 hinata.me##div[class*="AdManager__AdWrapper"]
 hinata.me#$#.promotion-banner { display: none !important; }
 hinative.com##.l_sidebar_container .mod_banner_app_download_rectangle
+hinative.com##.mod_banner_app_download_footer
 hinative.com##.mod_banner_app_download_sticky_button
 hinative.com##.mod_banner_bestapp_footer
 hinative.com##.mod_header_horizontal_app_banner
@@ -24302,6 +24306,7 @@ tropica.cn##.wp1.a_t
 trovo.live##+js(set-session-storage-item, download-dialog-closed, 1)
 trthaber.com##.mobile-masthead-ads-container
 truecaller.com##+js(set-cookie, tc:dismissexitintentpopup, true)
+truecar.com##.card:has([href*="marketplace&sponsored"])
 trustedreviews.com###dfpIdtop
 trustedreviews.com##.ebay-deals-container
 trustedreviews.com##.ipc-advert
@@ -24849,6 +24854,7 @@ video.fc2.com##div[style^="height:30px;text-align:center;background-color:black;
 video.fc2.com##iframe[src^="/pagead/"]
 video.fc2.com#$##body_contents #ad_head_wrap { padding-top: 0 !important; }
 video.fc2.com#?#iframe[src^="/a/pagead/"]:upward(1)
+video.tv-tokyo.co.jp###modal:has(> div#modal-inner > div#webpushsp)
 video.tv-tokyo.co.jp##.adApp-wrapper
 videobug.net,videofun.me,vidzur.com##.randid
 videocardz.com###vc-intermid-desktop-ad
@@ -31293,6 +31299,7 @@ zzzyk.com###Tinfo
 ||ae4.ifeng.com^
 ||aeaw.cn^
 ||aeelookithdifyf.com^
+||aeelookithdifyf.com^$popup
 ||aefmbeq.cn^
 ||aeg32y.top^
 ||aegis.qq.com^
@@ -33543,7 +33550,6 @@ zzzyk.com###Tinfo
 ||bejson.com/static/ydxyt/
 ||bekco.xyz^
 ||bekmhvbb.xyz^
-||belatedsafety.pro^
 ||beliketheappyri.info^
 ||belindanbd.com^
 ||bellessb.com^
@@ -34433,6 +34439,7 @@ zzzyk.com###Tinfo
 ||butterbulb.com^$third-party
 ||butterburst.com^$third-party
 ||buttn.cyou^
+||buuftxcii.com^
 ||buvdkt.icu^
 ||buxfznnf.xyz^
 ||buy.pconline.com.cn/$script
@@ -36684,6 +36691,7 @@ zzzyk.com###Tinfo
 ||d2un76zvb5mgzx.cloudfront.net^
 ||d2uu46itxfd65q.cloudfront.net^
 ||d2v02itv0y9u9t.cloudfront.net^
+||d2w9cdu84xc4eq.cloudfront.net^
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||d2zv5rkii46miq.cloudfront.net^
 ||d3.sina.com.cn/
@@ -36836,7 +36844,7 @@ zzzyk.com###Tinfo
 ||dajean.com^
 ||dajewoi.top^
 ||dajiadu8.com/17.js
-||dajiadu8.com/17mb/script/ad.js
+||dajiadu8.com/17mb/script/ad*.js
 ||dajiafacai923.xyz^
 ||dajiafacai926.xyz^
 ||dajiahao10.top^
@@ -37373,6 +37381,7 @@ zzzyk.com###Tinfo
 ||diezhanmi.net/js/aa^
 ||diezhanmi.net/js/xin^
 ||differentcoat.com^$third-party
+||diffhobbet.click^
 ||difficultfog.com^$third-party
 ||diffusedpassionquaking.com^
 ||diffusedpassionquaking.com^$popup
@@ -40262,7 +40271,6 @@ zzzyk.com###Tinfo
 ||gavbus*.com/assets/common/js/ad.js
 ||gavbus*.com/assets/common/js/admenu.js
 ||gayeah.cn^
-||gayforfans.com^*.php|$script
 ||gayide.com^
 ||gazozfelines.shop^
 ||gbc27.online^
@@ -40574,6 +40582,7 @@ zzzyk.com###Tinfo
 ||giga.de/static-local/dist/theme/assets/js/module/giga-*.mobile-stopper.js
 ||gikpnerd.com^
 ||gimy.*/images/eee*.png
+||gingagonkc.com^
 ||giotlsi.cn^
 ||giraffepiano.com^$third-party
 ||giraingoats.net^
@@ -41169,6 +41178,7 @@ zzzyk.com###Tinfo
 ||guke.name^
 ||guli21.com/PNEW/
 ||guli21.com/js/ggdm
+||gullahbaraca.com^
 ||gulliblecamp.com^$third-party
 ||gullibleguitar.com^$third-party
 ||gumgo.cn^$third-party
@@ -42261,6 +42271,7 @@ zzzyk.com###Tinfo
 ||hozzs.hk^
 ||hp.smiler-ad.com^
 ||hp1mufjhk.com^
+||hp8g6.icu^
 ||hpcwwd.com^
 ||hpd.baidu.com^
 ||hpdwfd2.com^
@@ -47285,6 +47296,7 @@ zzzyk.com###Tinfo
 ||making.party^$document
 ||making.party^$popup
 ||makqsd.icu^
+||malduckcompile.com^
 ||maliciousmusic.com^$third-party
 ||malimali5.com/ad1.png
 ||malinkesmectis.shop^
@@ -49464,6 +49476,7 @@ zzzyk.com###Tinfo
 ||ochoovoajaw.xyz^
 ||ocive.xyz^
 ||ocjdmjxm.com^
+||ockqabndg.com^
 ||ockuc.com^
 ||ocmhood.com^
 ||ocmpsfoyadwm.com^
@@ -51184,6 +51197,7 @@ zzzyk.com###Tinfo
 ||pstdzxu.cn^
 ||pstv.tv/pstv.jpg
 ||pstvvb.xyz^
+||psunseewhu.com^
 ||psutopheehaufoo.net^
 ||psvpromo.psvgamestudio.com^
 ||psychedelicarithmetic.com^$third-party
@@ -51421,6 +51435,7 @@ zzzyk.com###Tinfo
 ||pzqqstb.icu^
 ||pztezl.xyz^
 ||pztpygaul.com^
+||pzvai.site^
 ||pzwigrnuimeh.com^
 ||q.baminw.com.cn^
 ||q.f05.xyz^
@@ -53940,7 +53955,6 @@ zzzyk.com###Tinfo
 ||shnpetdn185.shop^
 ||sho9wbox.com^$third-party
 ||shoagooy.net^
-||shocking-profile.pro^
 ||shockinggrass.com^$third-party
 ||shockingship.com^$third-party
 ||shodoapognie.net^
@@ -55257,6 +55271,7 @@ zzzyk.com###Tinfo
 ||supfree.net/xxx/
 ||supfree.net^$xmlhttprequest
 ||supplyframe.com^$third-party
+||supqajfecgjv.com^
 ||suqiguoji.wang^
 ||surface361.com^
 ||surfwestlaw.com^
@@ -58791,7 +58806,6 @@ zzzyk.com###Tinfo
 ||whoican.love^
 ||whoolrulr.net^
 ||whoopblew.com^
-||whopping-sea.com^
 ||whotsirs.net^
 ||whouptoomsy.net^
 ||whouptoomsy.net^$popup
