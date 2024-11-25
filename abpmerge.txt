@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-11-25 08:21:49
-! Total count: 63973
+! Version: 2024-11-25 20:17:39
+! Total count: 64010
 
 ###ADtip
 ###AdBlockDialog
@@ -11984,9 +11984,9 @@ cn-healthcare.com##.fh_ad_wrap
 cn-healthcare.com##.fh_advent_wrap
 cn.bing.com###ev_talkbox_wrapper
 cn.bing.com###id_qrcode_popup_positioner
-cn.bing.com##.b_algo:has(p[class^="b_lineclamp2 b_algoSlug "])
 cn.bing.com##.b_bza_pole
 cn.bing.com#?##b_results > li:-abp-has(.b_adProvider)
+cn.bing.com#?#.b_algo:-abp-has(p[class^="b_lineclamp2 b_algoSlug "])
 cn.bing.com,www.bing.com,www4.bing.com$$div[class="BottomAppPro"]
 cn.engadget.com###module-engadget-deeplink-top-ad
 cn.engadget.com##div[class]:has(> div[id]:first-child + script:last-child)
@@ -12210,6 +12210,10 @@ coingecko.com##div[data-controller="app-flyer"]
 coingecko.com##div[data-controller="navbar"] a[href^="https://coingecko.app.link/"]
 coinmarketcap.com###ad-slot--leaderboard-top
 coinpaprika.com##.landing-coins__app-popup
+coinpedia.org##.footer-side-sticky
+coinpedia.org##.homepage_banner_ad
+coinpedia.org##.homepage_sidebanner_ad
+coinpedia.org##.top-menu-advertise
 coinranking.com##.sticky--full-width
 cointelegraph.com##.asia-posts-listing-mobile__item_press-releases
 cointelegraph.com##.header-zone__flower
@@ -18719,6 +18723,7 @@ m.perfectgirls.net##.banner-wrapper-static
 m.plo.vn###Mobile_AdsArticleBodyMiddle
 m.pornicom.com,m.fetishshrine.com##.video-cover
 m.povar.ru###popupBannerBottom
+m.price.com.hk,otakuma.net,nikkan-gendai.com,ranking.goo.ne.jp,m.hellporno.com,topics.smt.docomo.ne.jp,rank-king.jp,kun.uz,m.lenta.ru,m.aydin24haber.com,m.xcum.com,m.alphaporno.com,m.yourlust.com,m.3movs.com,m.sexu.com##body .banner
 m.prohardver.hu,m.mobilarena.hu##.xabrecontainer
 m.proporn.com##+js(set-cookie, no_postitial_content, 1)
 m.proporn.com##+js(set-cookie, playcnt, 1)
@@ -20944,10 +20949,10 @@ otakotaku.com#$##top_fixed_android { display: none !important; }
 otakotaku.com#$#body { padding-top: 70px !important; }
 otakuma.net###affiliate-list
 otakuma.net##body .banner-adsense
-otakuma.net,nikkan-gendai.com,ranking.goo.ne.jp,m.hellporno.com,topics.smt.docomo.ne.jp,rank-king.jp,kun.uz,m.lenta.ru,m.aydin24haber.com,m.xcum.com,m.alphaporno.com,m.yourlust.com,m.3movs.com,m.sexu.com##body .banner
 otona-life.com##.ad_minh_sp
 otonanswer.jp##.side-box-repeat > div[style="min-height: 280px;"]
 otonanswer.jp##.side-box-repeat > div[style="min-height: 315px;"]
+otto.de###sp_smartAppBanner
 otvet.mail.ru##+js(set-cookie, OTVET-9223-shown, 1)
 otvet.mail.ru##div:matches-css(before, content: /^Реклама/):matches-css(max-height:100px)
 otzovik.com##.ypluss16_age
@@ -22559,6 +22564,7 @@ scmp.com##.article-list__inline-ad
 scmp.com##.details__topics-ad
 scmp.com##.section-content-bottom__ad-container
 scmp.com##[data-qa="AppBar-renderLayout-AdSlotContainer"]
+scmp.com##[data-qa="ArticleContentRightSection-AdSlot"]
 scmp.com##div[class^="wrapper__mobile-wide-ad-container"]
 scmp.com#$##main-content > .home-page--slide-up { transform: none !important; }
 scmp.com#$#.top-ad { display: none !important; }
@@ -22639,6 +22645,7 @@ seikeidouga.blog.jp##+js(abort-current-script, navigator.userAgent, _rand)
 seikeidouga.blog.jp#?##ad
 seiska.fi##div[class*=AdAndCarousel__Wrapper]
 sejie4.com##.ad
+sekai-hub.com##.frame.sd.appear
 sekai-kabuka.com##div[style="width:768px;height:240px;position:relative;"]
 sekai-kabuka.com##div[style^="height:100px;width:300px"]
 sekerbank.com.tr##div[class^="mobilebadge_mobileBadge"]
@@ -24755,6 +24762,7 @@ unian.net##div[style="height: 250px; overflow: hidden; margin-bottom: 20px;"]
 unian.net##div[style="height: 335px"]
 unian.net##div[style="height:370px"]
 unian.net##div[style="height:370px; overflow: hidden"]
+unian.net##div[style^="height: 280px;"]
 unian.net##div[style^="min-height: 250px; margin-bottom: 20px;"]
 unian.net##iframe[src="/content/redtram-mob-post.html"]
 unian.net#?#.article div[data-ad]:upward(1)
@@ -25593,6 +25601,7 @@ wmxa.cn##.asdft,.adsbygoogle,[class="imageplus-append imageplus-append-bug-fixer
 wmzhe.com##.aibyte_ad
 wmzhe.com##.downloader
 wmzhe.com##[class="overflow"],div[class="mt10"],.downgs
+wn01.uk##IMG[alt][style='width: 100%; height: 100%;']
 wn789.com##.sidebar > .widget:not(:first-child):not(.widget_ui_posts)
 wn789.com##a[href^="http"]:not([href*="://www.wn789."]) > img
 wnacg.com##a[href^="http"]:not([href*="wnacg."]) img
@@ -28142,6 +28151,7 @@ zzzyk.com###Tinfo
 ||1xlala.com/img/
 ||1xlite-016702.top^
 ||1xlite-016702.top^$popup
+||1xzf53lo.xyz^
 ||1ytao.com^
 ||2.arpun.com^
 ||2.haoxue360.com^
@@ -30130,6 +30140,7 @@ zzzyk.com###Tinfo
 ||94188.xyz^
 ||941novel.com/wp-content/uploads/*.gif
 ||94597672.xyz^$document,popup
+||94789b3f8f.com^
 ||94994.com*/js/plugin/shoppingMall/
 ||949949.com/2013/end/hot_news.js
 ||94ab.com^$third-party
@@ -34525,6 +34536,7 @@ zzzyk.com###Tinfo
 ||brughsasha.shop^
 ||bruisebaseball.com^$third-party
 ||brulesprivy.com^
+||brulpha.com^
 ||brutishlylifevoicing.com^
 ||brutishlylifevoicing.com^$popup
 ||brutvncv.top^
@@ -35341,6 +35353,7 @@ zzzyk.com###Tinfo
 ||cenyou.net/wp-content/uploads/1200-200.
 ||ceoqq.xyz^
 ||ceppartner.com^
+||cepsidsoagloko.net^
 ||ceqerq.xyz^
 ||cerfbup.xyz^
 ||cergbtb36.shop^
@@ -35851,6 +35864,7 @@ zzzyk.com###Tinfo
 ||click.taobao.com^$popup,domain=steamcn.com
 ||click.tianyaui.com^
 ||click2.hd.sohu.com^
+||click4.pro^
 ||clickadsource.com^
 ||clickadsource.com^$popup
 ||clickadu.com^
@@ -36843,6 +36857,7 @@ zzzyk.com###Tinfo
 ||cvfgere96.cn^
 ||cvftv2.com^
 ||cvgrszkg.xyz^
+||cvgto-akmk.fun^
 ||cvmuia.xyz^
 ||cvnxetmq.xyz^
 ||cvsheil.com^
@@ -36995,6 +37010,7 @@ zzzyk.com###Tinfo
 ||d1f05vr3sjsuy7.cloudfront.net^
 ||d1f0esyb34c1g2.cloudfront.net^*/adextranscode-$domain=amazon.com|amazon.co.jp|amazon.co.uk|amazon.de|amazon.es|amazon.fr|amazon.in|amazon.it|amazon.ca|amazon.cn|amazon.com.mx|amazon.com.au|amazon.ae|amazon.sa
 ||d1f9x963ud6u7a.cloudfront.net^
+||d1gpi088t70qaf.cloudfront.net^
 ||d1iy4wgzi9qdu7.cloudfront.net^
 ||d1lxz4vuik53pc.cloudfront.net^$domain=amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.uk|amazon.com|amazon.com.au|amazon.com.br|amazon.com.mx|amazon.com.tr|amazon.de|amazon.eg|amazon.es|amazon.fr|amazon.in|amazon.it|amazon.nl|amazon.pl|amazon.sa|amazon.se|amazon.sg
 ||d1n3aexzs37q4s.cloudfront.net^
@@ -37689,6 +37705,7 @@ zzzyk.com###Tinfo
 ||dhlh.org^
 ||dhlmy.com^
 ||dhm1.top^
+||dhootiepawed.com^
 ||dhqp68.com^
 ||dhrfnyw.xyz^
 ||dhtdig.xyz/static/js/dht_default.js
@@ -38849,6 +38866,8 @@ zzzyk.com###Tinfo
 ||edpl9v.pro^$popup
 ||edralintheirbrights.com^
 ||edssnet.changchunets.com^
+||edstrastconversity.org^
+||edstrastconversity.org^$popup
 ||edu-30130.sz.gfp.tencent-cloud.com^*.gif
 ||edu-yuedu.bdimg.com/v1/aiting^$app=com.baidu.yuedu
 ||edu.51cto.com/js/edu-ad.js
@@ -39402,6 +39421,7 @@ zzzyk.com###Tinfo
 ||evjrrljcfohkvja.xyz^
 ||evkzqs.xyz^
 ||evscnfj.cn^
+||evsw-zfdmag.one^
 ||evtubescms.phncdn.com^
 ||evtubescms.phncdn.com^$redirect=noopmp4-1s
 ||evunmc.xyz^
@@ -41424,6 +41444,7 @@ zzzyk.com###Tinfo
 ||gqjdweqs.com^
 ||gqjeqaqrxexmd.com^
 ||gqleov.icu^
+||gqrvpwdps.com^
 ||gquwuefddojikxo.xyz^
 ||gqvdcek.cn^
 ||gqwwshbdd1.fun^
@@ -44636,6 +44657,7 @@ zzzyk.com###Tinfo
 ||jbplm.com^
 ||jbuzacg.cn^
 ||jbyy010.com^
+||jbzmwqmqwowaz.top^
 ||jbzyw.com/Application/M/adv/
 ||jc.bubbleandyeson.com^
 ||jc.lgtianma.cn/*.gif$domain=m.geosouth.net
@@ -45180,6 +45202,7 @@ zzzyk.com###Tinfo
 ||jpgtpbl.cn^
 ||jphfqq.cn^
 ||jpm.cn/images/a/
+||jpmkbcgx-o.buzz^
 ||jpnbhyba.xyz^
 ||jppxnhe.xyz^
 ||jpqed.xyz^
@@ -45227,6 +45250,7 @@ zzzyk.com###Tinfo
 ||jrrxbz.net^
 ||jrszhibo.com/m/js/lrtk.js
 ||jrtlisa.top^
+||jrtonirogeayb.com^
 ||jrtyi.club^
 ||jrutvnca.top^
 ||jrysogsia.uno^
@@ -50288,6 +50312,7 @@ zzzyk.com###Tinfo
 ||ocdn.eu/ramp/*/Sponsoring-Mobile-Float-Universal/*.js
 ||oceanbot-steam.com^
 ||oceancode.top^
+||oceansaver.in/ajax/ad/$popup
 ||ocexikc.cn^
 ||ocggec.xyz^
 ||ochoovoajaw.xyz^
@@ -50411,6 +50436,7 @@ zzzyk.com###Tinfo
 ||oiewpw.com^
 ||oifyeldk.top^
 ||oijmds.com^
+||oijzvhzt.com^
 ||oiknldwlkop.com^
 ||oikqwnm.com^
 ||oilbirdsqueaks.click^
@@ -50596,6 +50622,7 @@ zzzyk.com###Tinfo
 ||onxokvvevwop.xyz^
 ||onxtxdm.xyz^
 ||oobsaurt.net^
+||oobsaurt.net^$popup
 ||oocie.cn^
 ||oocmangamsaih.net^
 ||oocmoaghurs.net^
@@ -51358,6 +51385,7 @@ zzzyk.com###Tinfo
 ||perennialmythcooper.com^
 ||perf-events.cloud.unity3d.com^
 ||perfect999.site^
+||pericuelysian.top^
 ||periodicpocket.com^$third-party
 ||perlmaven.com/img/*0x2
 ||perlmaven.com/img/sticker-you.jpg
@@ -51881,6 +51909,7 @@ zzzyk.com###Tinfo
 ||postrelease.com^
 ||postserviceuk.com^
 ||postut.cn^$third-party
+||potailvine.com^
 ||pothouse.cn^
 ||potterphotographic.com^
 ||pottierneronic.top^
@@ -51997,6 +52026,7 @@ zzzyk.com###Tinfo
 ||primarilysweptabundant.com^
 ||primarkingfun.giving^
 ||primarkingfun.giving^$popup
+||prime-ever.com^
 ||princesses.asia^
 ||principles.wang^
 ||pringed.space^
@@ -55114,6 +55144,7 @@ zzzyk.com###Tinfo
 ||showhaotu.$domain=18board.com|18p2p.com
 ||showjav11.fun^
 ||shproud.com^
+||shprybatnm.com^
 ||shrillspoon.com^$third-party
 ||shrimpsaitesis.shop^
 ||shscva.cn^
@@ -55323,6 +55354,7 @@ zzzyk.com###Tinfo
 ||sinolub.com/data/js$script
 ||sinolub.com/index.php?m=poster&
 ||sinst.fwdcdn.com/_uploaded_files/ads/
+||sinterfumescomy.org^
 ||sionscormation.org^
 ||sionwops.click^
 ||sionwops.click^$document
@@ -58302,6 +58334,7 @@ zzzyk.com###Tinfo
 ||ub1.job592.com^
 ||ubalh.com^
 ||ubazhaheit.top^
+||ubbkfvtfmztilo.com^
 ||ubcpm.com^
 ||ubdmfxkh.com^
 ||ubeaui.xyz^
@@ -58899,6 +58932,7 @@ zzzyk.com###Tinfo
 ||uwastehons.com^
 ||uwdspsh.cn^
 ||uweisit.top^
+||uweizat.top^
 ||uweriot.top^
 ||uwerpyh.cn^
 ||uwgnpkd.cn^
@@ -59883,6 +59917,7 @@ zzzyk.com###Tinfo
 ||wcsmvmf.icu^
 ||wctcudh.cn^
 ||wcv68kw.com^
+||wcwkcus.top^
 ||wd.adcolony.com^
 ||wd.adcolony.com^$app=com.iwantavnow
 ||wd.adcolony.xyz^
@@ -60161,6 +60196,7 @@ zzzyk.com###Tinfo
 ||whinfo.net.cn/js/fly_right.js
 ||whippetahunt.shop^
 ||whirlwealth.com^$third-party
+||whishannuent.com^
 ||whiskeydepositopinion.com^
 ||whiskyqueue.com^$third-party
 ||whisperinflate.com^
@@ -62623,6 +62659,7 @@ zzzyk.com###Tinfo
 ||youqumob.com^$third-party
 ||youradexchange.com^
 ||yourhotfeed.com^
+||yourluckydates.com^
 ||youshouge513.cn^
 ||yousuode.cn^
 ||youth.cn/images/adyun.js
