@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2024-11-30 20:16:03
-! Total count: 64497
+! Version: 2024-12-01 08:18:58
+! Total count: 64507
 
 ###ADtip
 ###AdBlockDialog
@@ -23,7 +23,6 @@
 ###SmBnLink
 ###Video-Shunt-Box + .container
 ###ZAML
-###Zi_ad_a_H
 ###\31 280_adv
 ###\31 x1_container.float-banner-footer
 ###__ads_dp
@@ -62,6 +61,9 @@
 ###ad_full
 ###ad_globle_div
 ###ad_headerbanner
+###ad_hf_out2
+###ad_hf_out4
+###ad_hf_out5
 ###ad_inview_area
 ###adad
 ###adb-actived
@@ -6103,7 +6105,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 17yy.com###load_ad,.t2_3,.t3,.t2r_3,#web_yx,#close
 17yy.com##.t2_3
 17yy.com##.t2r_3
-18-comic.work,18-comicfreedom.org,18-comicfreedom.xyz,18-comicstellar.art,18comic.org,18comic.vip,jm-comic1.cc,jm-comic2.cc,jmcomic.me,jmcomic1.me,jmcomic2.me#@#.col-lg-3.col-xs-6 > .well
 18-comicfrieren.xyz,18comic.org,18comic.vip###guide-modal
 18-comicfrieren.xyz,18comic.org,18comic.vip##.modal-backdrop
 18-comicfrieren.xyz,18comic.org,18comic.vip##a[href*="//"]:not([href*="comic."]) > [style*="back"]
@@ -6686,16 +6687,12 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 423down.com##.content > p[style]
 423down.com##.entry > p > strong
 423down.com##.entry > p[align="center"]:first-child
-423down.com##.entry > p[style$="111"]
 423down.com##.entry > p[style="font-size: 20px;"]
-423down.com##.entry > p[style^="color:red"]
 423down.com##.entry > p[style^="font-size"] > a[href*="/go."]
-423down.com##.entry > strong > p
 423down.com##.menu > .menu-item:nth-child(n+6)
 423down.com##.widget_d_banner
 423down.com##LI.item:has(.sticky-post)
 423down.com##a[href*="/go."] > img
-423down.com##span > a > b
 423down.com#?#.post-related > ul > li:-abp-has(> a[href^="http"]:not([href*="423down."]))
 423down.com#?#li:-abp-has(> .pic[href^="http"]:not([href*="423down."]))
 42xz.com##.xzbox-lf > ul:not(:last-child)
@@ -8407,6 +8404,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 @@||googletagservices.com/tag/js/gpt.js$domain=tvb.com|tvbs.com.tw|www.gamer.com.tw
 @@||googletagservices.com/tag/js/gpt.js$domain=tvb.com|www.gamer.com.tw
 @@||googletagservices.com/tag/js/gpt.js$domain=ukr.net
+@@||googletagservices.com^$script,domain=creaders.net
 @@||gooogle.how^$generichide
 @@||gotunnel.org^
 @@||gov.cn/scripts/Comm/AdRotator.js
@@ -10943,6 +10941,7 @@ bing.com###hc_opalinst_cta
 bing.com##.OpInNwWndw
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
+bing.com##.b_algo:has(p[class^="b_lineclamp2 b_algoSlug "])
 bing.com##.opal_serpftrc
 bing.com##DIV.sb_adsNv2,li.b_ad,div.OpInNwWndw
 bing.com##cs-native-ad-card
@@ -11264,6 +11263,7 @@ brightside.me##div[data-test-id="article"] div.article + div:not([class]):not([i
 brightside.me##div[data-test-id="articles-list"] > div:not([data-sharing-target]):not([data-test-id])
 brightside.me#?#div[data-test-id="article"] div[class]:has(> aside[style="min-height: 310px;"] > div:contains(Advertisement))
 brightside.me#?#div[data-test-id="article-content"] div[class]:has(> aside div:contains(Advertisement))
+brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##[class] > [class]:has(> [data-testid="ad"])
 broadwayworld.com##.disnep-area > div[style^="width:"]
 brow2ing.com##.free-area
 browardpalmbeach.com,dallasobserver.com,miaminewtimes.com,phoenixnewtimes.com,westword.com##[apn-ad-hook]
@@ -11663,6 +11663,7 @@ check24.de##+js(set-cookie, app_promo_splash_screen_close, 1)
 check24.de##+js(set-cookie, appsplash, 1)
 check24.de##+js(set-cookie, c24FlugSplashApp, 1)
 check24.de##+js(set-cookie, dslsplash, 1)
+check24.de#$##c24asle { display: none !important; }
 check24.de#$##splashScreenContainer { display: none !important; }
 check24.de#$#.c24m-asb { display: none !important; }
 check24.de#$#.c24m-asb-visible { position: absolute !important; }
@@ -11779,6 +11780,7 @@ chinanews.com,chinanews.com.cn###dingtong
 chinanews.com.cn###ad_right_fc1
 chinanews.com.cn##.wap_adv
 chinanews.com.cn##[id$="_advert"]
+chinanewsx.com##.card-body > .my-3:last-child
 chinanewsx.com##.side-nav
 chinanewsx.com##a[href="/about/"]
 chinanewsx.com##a[href^="/go/"]
@@ -11995,6 +11997,7 @@ cn.bing.com###id_qrcode_popup_positioner
 cn.bing.com##.b_bza_pole
 cn.bing.com#?##b_results > li:-abp-has(.b_adProvider)
 cn.bing.com#?#.b_algo:-abp-has(p[class^="b_lineclamp2 b_algoSlug "])
+cn.bing.com#?#.sb_form_placeholder:-abp-has(>.ad-ghost-slug)
 cn.bing.com,www.bing.com,www4.bing.com$$div[class="BottomAppPro"]
 cn.engadget.com###module-engadget-deeplink-top-ad
 cn.engadget.com##div[class]:has(> div[id]:first-child + script:last-child)
@@ -13881,6 +13884,7 @@ facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > 
 facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"] div[data-mcomponent="TextArea"] .native-text > span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|赞助内容|広告|സ്‌പോൺസർ ചെയ്‌തത്)/)):not(:has([data-tracking-duration-id])) + .m:is(.bg-s2, .bg-s3, .bg-s4) + .m:is(.bg-s2, .bg-s3, .bg-s4) + .m:not(:has(.m:empty)) + .m:not(:has(.m:empty)):has(+ .m .m[data-mcomponent$="TextArea"]:empty)
 facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"] div[data-mcomponent="TextArea"] .native-text > span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|赞助内容|広告|സ്‌പോൺസർ ചെയ്‌തത്)/)):not(:has([data-tracking-duration-id])) + .m:is(.bg-s2, .bg-s3, .bg-s4) + .m:is(.bg-s2, .bg-s3, .bg-s4):has(+ .m:not(:has(.m:empty)))
 facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"] div[data-mcomponent="TextArea"] .native-text > span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|赞助内容|広告|സ്‌പോൺസർ ചെയ്‌തത്)/)):not(:has([data-tracking-duration-id])) + .m:is(.bg-s2, .bg-s3, .bg-s4):has(+ .m:is(.bg-s2, .bg-s3, .bg-s4) + .m:not(:has(.m:empty)))
+facebook.com#@#script:not([src]) + style + div[id]:not([class]):not([style])
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onionfacebook.com##div[data-mcomponent="MContainer"][class="m fixed-container bottom"][data-actual-height="53"]
 factor.ua##.b-app-banner
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
@@ -14912,6 +14916,7 @@ girlsreport.net##.self_ad
 girlstyle.com,thecatcity.com,urbanlifehk.com##.article-pop-up-ad
 girlswalker.com##.dfp_recommend_for_sp
 girlswalker.com##.dfp_single_banner_for_sp
+girlswalker.com##.gw-footer-banner-app-wrap
 gisher.org##body > div[id^="ban"][style]
 gismeteo.by##.media_height_l
 gismeteo.by,gismeteo.ru##.media_height_m
@@ -15704,6 +15709,7 @@ himovies.to,home-barista.com,rarpc.co,washingtontimes.com##a[onclick]
 hinata.me##+js(remove-class, show-app-banner, div[class^="Header__StyledComponent"])
 hinata.me##div[class*="AdManager__AdWrapper"]
 hinata.me#$#.promotion-banner { display: none !important; }
+hinatazaka46.com##.app-button
 hinative.com##.l_sidebar_container .mod_banner_app_download_rectangle
 hinative.com##.mod_banner_app_download_footer
 hinative.com##.mod_banner_app_download_sticky_button
@@ -17245,6 +17251,8 @@ jmw.com.cn##.top_pic
 jmw.com.cn##[class^="advertising"]
 jnnc.com###float_layer
 jnnc.com##.basehr + div
+job.inshokuten.com,kurukura.jp#@#.ad-area
+job.minnanokaigo.com##.grid-cols-app-bar
 jobbole.com###sidebar > .widget_text:first-child
 jobbole.com##.post-adds + .textwidget
 jobbole.com##img[width="728"][height="90"],#text-101,#text-106,#text-105,#sidebar-recommend
@@ -17569,7 +17577,6 @@ kdslife.com,pchome.net##.weixin
 ke.qq.com##.bottom-bar
 keaidian.com##.lanmu_di
 kehuan.net.cn##.bread_728x90
-keirin.netkeiba.com#?#div[class^="Column_Detail"] > div.banner320:has(> a[href] > img[src*="appdl_banner_square"])
 keisan.casio.jp###adv_middle
 kejianyuan.com##DIV.box_1 > TABLE:first-child > TBODY > TR:first-child,TD[width="234"][height="60"],div.box_gg
 keke.la###slide:first-child
@@ -18095,7 +18102,6 @@ liquipedia.net###networknotice-71
 liquipedia.net##+js(remove-class, mobile-sticky-ad-is-active, body)
 liquipedia.net##.app-popup
 list.jd.com##.jdm-tbar-tab-qrcode
-listenradio.jp###fancybox-wrap
 literaryreview.co.uk##.tall-advert
 litlib.net###gnzdfoot
 litv.tv##.internal_bn
@@ -19488,6 +19494,7 @@ mentoday.ru##.article-detail_tag_ad_mobile_video_recommend
 mentoday.ru##.article-detail_tag_content_billboard_mobile
 mephimnhat.com##.ff-banner
 mercadolibre.com.ar##+js(set-cookie-reload, nav_dab_closed, 1)
+mercadolibre.com.ar##.download-app-top-banner-wrapper
 mercadolivre.com.br#$#.download-app-banner-container { display: none !important; }
 mercadolivre.com.br#$#body { overflow: auto !important; }
 mercadonegro.pe##.ads_c
@@ -20203,7 +20210,6 @@ navitime.co.jp##.app_dl_banner_frame
 navitime.co.jp##.drive-app-area
 navitime.co.jp##.footer-invite-app-frame
 navitime.co.jp##.footer-invite-app-section
-navitime.co.jp##.inview-m8iDqk1XV9
 navitime.co.jp##.invite-app-bottom-frame
 navitime.co.jp##.js-banner-frame
 navitime.co.jp##.navitime-app-dl-area
@@ -21145,6 +21151,7 @@ pcdown.net##.bzxz
 pcdown.net##.sort_list > .clearfix:first-child
 pcgames.com.cn##.aFollowb
 pcgames.de##.strr_slot
+pcgames.de##div.header_footer.ui-footer.ui-bar-inherit.ui-footer-fixed.slideup[data-role="footer"]
 pcgames.de#$#.stickyHeader+#loginFormMobileWrapper+.navigation+main { margin-top: 5.5rem !important; }
 pcgames.de#?#.articleTicker > .item:has(> .textFrame > .articleInfo > .at_sponsored)
 pcgames.de#?#.disrupter-Color-OrangeReview > a:has(> .textFrame > .articleInfo > .autorName:contains(Anzeige))
@@ -23479,6 +23486,7 @@ st.benesse.ne.jp#$#.app_download_banner ~ header[style^="margin-top:"] { margin-
 stackexchange.com,stackoverflow.com##.js-freemium-cta
 stackoverflow.com##di#SE20-ad-container
 stalkerportaal.ru##.video_adsense
+standard.co.uk##[class]:has(> [data-fluid-zoneid])
 standard.co.uk#?##main > div[class]:has(> div#taboola-carousel-thumbnails)
 starbaby.cn###top_ad_show
 starbaby.cn###yindex_ads
@@ -27062,6 +27070,7 @@ zerohedge.com###leaderboard-mobile
 zerohedge.com##.left-rail
 zerohedge.com##.mixed-in-content
 zerohedge.com##.mixed-unit-ac
+zerohedge.com##[class^="PromoButton"]
 zerohedge.com##div[class^="ContentPack_cp__"]:has(> div[id^="rc-widget-"])
 zerohedge.com##iframe[src^="//www.dianomi.com"]
 zeroupload.com##.download-page a[rel="noopener"] > img
@@ -31558,6 +31567,7 @@ zzzyk.com###Tinfo
 ||aeyyck.xyz^
 ||af29.com/banner/
 ||af31f.site^
+||af6s.icu^
 ||af9dc9.xyz^
 ||afablca.cn^
 ||afafevk.com^
@@ -32338,11 +32348,12 @@ zzzyk.com###Tinfo
 ||anyysz.com^
 ||anzabboktk.com^
 ||anzhuotan.com/Runtime/js/dwg.js
-||ao11*kas.top/$script,third-party
+||ao1*kas.top/$script,third-party
 ||ao1118kas.top^
 ||ao1120kas.top^
 ||ao1122kas.top^
 ||ao1123kas.top^
+||ao1201kas.top^
 ||aoakss.com^
 ||aoao11*iis.top/$script,third-party
 ||aoao11111iis.top^
@@ -34615,6 +34626,7 @@ zzzyk.com###Tinfo
 ||brightcriticism.com^
 ||brinesbests.top^
 ||bringchukker.com^
+||brircel.com^
 ||britishinquisitive.com^
 ||brixel.cn^
 ||brixfdbdfbtp.com^
@@ -37213,7 +37225,6 @@ zzzyk.com###Tinfo
 ||d3t3z4teexdk2r.cloudfront.net^
 ||d3u598arehftfk.cloudfront.net^
 ||d4.sina.com.cn^$object,script
-||d415l8qlhk6u6.cloudfront.net^
 ||d43849fz.xyz^
 ||d4vd.life/love/
 ||d5.sina.com.cn^$image,domain=~www.sina.com.cn
@@ -38859,6 +38870,7 @@ zzzyk.com###Tinfo
 ||e770af238b.com^
 ||e7ckr.icu^
 ||e7e34b16ed.com^
+||e8d7.icu^
 ||e8jp9.com^
 ||e9377f.com^$rewrite=abp-resource:blank-mp3,domain=eastday.com
 ||e9d13e3e01.com^
@@ -39010,6 +39022,7 @@ zzzyk.com###Tinfo
 ||edaciousedacioushandkerchiefcol.com^
 ||edadmy.xyz^
 ||edaightutaitlastwe.info^
+||edamcsw.top^
 ||edayday.com/img/ad
 ||edconsideundence.org^
 ||eddcc.icu^
@@ -43299,7 +43312,6 @@ zzzyk.com###Tinfo
 ||huhuhiiuio.com^
 ||huhumh.com/js/
 ||huhwllvk.xyz^
-||huiagun.com/template/common.js
 ||huibaihe.net/js/dddd.js
 ||huibaihe.net/static/730-580.
 ||huichuan.sm.cn^
@@ -44930,6 +44942,7 @@ zzzyk.com###Tinfo
 ||jcrb.com/ZYW/$subdocument
 ||jcsppgv.cn^
 ||jcvty.cyou^
+||jcwlsofn.icu^
 ||jcwtml.icu^
 ||jczunp.xyz^
 ||jd-bbs.com/tianyi/
@@ -49630,7 +49643,6 @@ zzzyk.com###Tinfo
 ||mymf.shop^
 ||mymqcy.xyz^
 ||mynwct.xyz^
-||myperfect2give.com^
 ||mypopadpro.com^
 ||mypopadpro.com^$document
 ||mypopadpro.com^$popup
@@ -52545,7 +52557,6 @@ zzzyk.com###Tinfo
 ||ptaishisteb.com^
 ||ptaishux.com^
 ||ptaitossaukang.net^
-||ptaixout.net^
 ||ptatzrucj.com^
 ||ptaufefagn.net^
 ||ptauxofi.net^
@@ -58297,7 +58308,6 @@ zzzyk.com###Tinfo
 ||trojangfw.xyz^
 ||trololopush2023push.com^
 ||troubledcontradiction.com^
-||troubledcontradiction.com^$popup
 ||troubledtail.com^$third-party
 ||troubleshade.com^$third-party
 ||troxa.xyz^
