@@ -2,8 +2,8 @@
 ! Title: ABP Merge Rules
 ! Description: 该规则合并自AdGuard优化，EasyList(mini)，chinalist-easylist，CJX'sAnnoyance，jiekouAD，ADGK，乘风广告规则，AdditionalFiltersCN，以及补充的一些规则
 ! Homepage: https://github.com/psychosispy/abpmerge
-! Version: 2025-04-25 08:22:09
-! Total count: 47957
+! Version: 2025-04-25 20:18:20
+! Total count: 48003
 
 ###ADtip
 ###AdBlockDialog
@@ -1810,7 +1810,7 @@ $$div[id="Couple"]
 $$ins[class="adsbygoogle"]
 $$p[class="ReadAd"]
 $$span[class="dmcenterb"]
-$csp=script-src 'self' * 'unsafe-inline',domain=xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
+$csp=script-src 'self' * 'unsafe-inline',domain=bqug8.com|xianguke.net|kunnu.com|yourbiquge.com|biquge345.com|666biquge.com|biquwx.cc|1kans.net|aidu123.com|biquluo.info|bqgh.com|jmshuwu.net|maxshuku.com|shukuge.com|sthuojia.net|tvyun07.com|zk01.net
 $csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval' pic1.mangapicgallery.com www.google.com,domain=mangago.me
 $csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval' www.gstatic.com cdn.jsdelivr.net maxcdn.bootstrapcdn.com,domain=bigwarp.io
 $csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval',domain=thumbs.pro
@@ -2924,9 +2924,9 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /\/slade[0-9]?\.js/$domain=zxzj.me
 /\/uploads\/[a-z]+\/\d\.gif$/$image,~third-party,domain=mangagun.net|nicomanga.com|rawinu.com|weloma.art|welovemanga.one
 /\/uploads\/\d{4}\/\d{2}\/(?!85466|banner)[_0-9a-zA-Z]+\.(?:gif|jpg)$/$image,~third-party,domain=eromoji.com
-/^a\.[0-9a-f]{56}\.com$/
+/^(a|c)\.[0-9a-f]{56}\.com$/
+/^https:\/\/(a|c)\.[0-9a-f]{56}\.com$/
 /^https:\/\/[0-9a-z]+\.(art|pro)\/[0-9a-z]+\?[0-9A-Za-z]+=c[0-9A-Za-z]+%3D%3D$/$popup,third-party
-/^https:\/\/a\.[0-9a-f]{56}\.com$/
 /^https?:\/\/.*\.(com|net|org|fr)\/[A-Za-z0-9]{1,}\/[A-Za-z0-9]{1,}\/[A-Za-z0-9]{2,}\/.*/$image,domain=allthingsvegas.com|aupetitparieur.com|beforeitsnews.com|canadafreepress.com|concomber.com|conservativefiringline.com|dailylol.com|ipatriot.com|mamieastuce.com|meilleurpronostic.fr|miaminewtimes.com|naturalblaze.com|patriotnationpress.com|populistpress.com|thegatewaypundit.com|thelibertydaily.com|toptenz.net|vitamiiin.com|westword.com|wltreport.com|writerscafe.org
 /^https?:\/\/.*\/.*(sw[0-9a-z._-]{1,6}|\.notify\.).*/$script,domain=1337x.to|clickndownload.click|clicknupload.click|cloudvideo.tv|downloadpirate.com|fmovies.taxi|fmovies.world|igg-games.com|indishare.org|linksly.co|megaup.net|mixdrop.ag|mp3-convert.org|nutritioninsight.com|ouo.press|pcgamestorrents.com|pcgamestorrents.org|powvideo.net|powvldeo.cc|primewire.sc|proxyer.org|sendit.cloud|sendspace.com|shrinke.me|shrinkhere.xyz|theproxy.ws|uiz.io|up-load.io|uploadever.com|uploadrar.com|uploadrive.com|uplovd.com|upstream.to|userscloud.com|vidoza.co|vidoza.net|vidup.io|vumoo.life|xtits.com|yourbittorrent2.com|ziperto.com
 /^https?:\/\/.*\/.*sw[0-9._].*/$script,xmlhttprequest,domain=1vag.com|4tube.com|adult-channels.com|analdin.com|biguz.net|bogrodius.com|chikiporn.com|fantasti.cc|fuqer.com|fux.com|hclips.com|heavy-r.com|hog.tv|megapornx.com|milfzr.com|mypornhere.com|porn555.com|pornchimp.com|pornerbros.com|pornj.com|pornl.com|pornototale.com|porntube.com|sexu.com|sss.xxx|thisav.com|titkino.net|tubepornclassic.com|tuberel.com|tubev.sex|txxx.com|vidmo.org|vpornvideos.com|xozilla.com|youporn.lc|youpornhub.it|yourdailypornstars.com
@@ -3769,6 +3769,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /sta.js?debug=
 /stat.asp
 /statIwt_
+/static/23wx/idd.js
 /static/2biqu/twgdh.js
 /static/adsview/*
 /static/jietiandixs/jtd.js$~third-party
@@ -9919,6 +9920,8 @@ esnai.com##.tlgg
 esnai.com##table[width="960"] > tbody > tr > td[height="90"]
 espn.com##.sponsored-content
 espncricinfo.com###main-container > div.ds-border-line-primary
+espncricinfo.com##.ds-bottom-14.ds-right-0
+espncricinfo.com##button:has(> span:contains(Get App))
 espncricinfo.com#?##main-container > div.ds-fixed:has(> div.ds-text-title-subtle-m:contains(A New Native Experience))
 esports.gg###FreeStarVideoAdContainer_BesOfEsportsgg
 esports.net##.parallax-container
@@ -10920,6 +10923,8 @@ giga.de#$#body { padding-top: 9rem !important; }
 giga.de#$#body.mobile { padding-top: 0!important; }
 giga.de#?#.alice-teaser-list-item:has(> div[id^="giga.de_gruen_startseite_teaser"]:only-child)
 giga.de,chatgptdemo.info,chat.chatgptdemo.net,mega4upload.com,baby-calendar.jp##a[href^="https://play.google.com/store/apps"]
+gigabaito.com##.app_bottom_banner
+gigabaito.com##.app_cv_footer
 gigafile.nu##.pr_area_sp
 gigafile.nu#$##area-footer { bottom: 0 !important; }
 gigafile.nu#$##gigafilefly-slot-ol { display: none !important; }
@@ -15330,6 +15335,7 @@ nationalworld.com##body div[class^="Dailymotion__Wrapper-"]
 natlawreview.com##.\#div\.block-native_bf
 natlawreview.com##.block-content-ad_block
 natural-cosmetology.ru##body > div[style*="background-color:#ff0000;color:#ffffff;"]
+nau.ch##div[data-sticky-height="1px"]
 nau.ch##nau-advertisement-lazy
 nautiljon.com###cmsg
 navbharattimes.indiatimes.com##div[id^="div-clmb-ctn"]
@@ -15738,6 +15744,7 @@ noodlemagazine.com##.main > div.container > div[style^="max-width:450px;margin:0
 noodlemagazine.com##div[style^="height:110px;max-width:450px;"]
 noodlemagazine.com#?#div[style^="background-color:"]:has(> iframe[data-src^="//go."])
 noon.com###modules-renderer:has([class*="sponsored"])
+noon.com###noon-modules:has([class*="AdBrandVideo"])
 nordbayern.de##div[id*="-mobile-ad-"]
 nordot.app##.main__adWrapper
 nordot.app##.page__ad:not(.page__ad--discoverMore)
@@ -15779,6 +15786,7 @@ ntfsformac.cn
 ntm.gov.tw#@#.ad-left
 ntunhs.edu.tw,ntust.edu.tw,sjsmitaa.org#@#.module-ads
 ntv.com.tr##.mobile-mpu-area
+ntvtelugu.com##.top-news-wrapper div.slider-left
 nu.nl##div[data-type="tealium"]
 nudeteenwhore.com##.mobile-block
 nudevista.at,nudevista.be,nudevista.com,nudevista.com.br,nudevista.com.pl,nudevista.es,nudevista.it,nudevista.net,nudevista.nl,nudevista.se,nudevista.tw##.mob_adv
@@ -16979,6 +16987,8 @@ raiffeisen.ua##.mobile-app-block
 raincent.com##.banner-top
 rainews.it#$#.banner-app { display: none !important; }
 rainews.it#$#html > body[data-layout=homepage] main { border-bottom: 0px solid #009 !important; }
+rakukan.net##+js(addEventListener-defuser, DOMContentLoaded, interstitialAdDiv)
+rakukan.net##.free-area:has(> div > div > ul.link__list)
 rakumachi.jp###linkToAdClickLog
 rakumachi.jp##+js(remove-class, entryDetail__app, div)
 rakumachi.jp##.topPageHeaderBanner
@@ -17172,6 +17182,7 @@ republicworld.com##.mainWrapper > .headerContainer ~ div[style^="overflow: hidde
 republicworld.com##div.py-6:has(> .adWidget)
 republicworld.com#?#div[style] > div[style*="min-height"]:has(> amp-ad)
 republicworld.com,www-republicworld-com.cdn.ampproject.org##div[class^="ads_"]
+researchgate.net##.global-leaderboard-ad-container
 researchgate.net##.lite-page__footer-native-app
 reset-scans.co##.madara-ad-banner
 reshu.by,reshuent.kz,sdamgia.ru#@#.googlead
@@ -17401,6 +17412,7 @@ sakai-hk.com,sakai.club###diynavtop,.adsbygoogle,.a_pt
 salary.com##.sovrn-content-research
 salary.com##.sovrn-content-wide
 salary.com##.sovrn-leaderboard
+sameday.costco.com##[aria-label="Product"]:has(sp-tag)
 sammobile.com##.g-29
 sammobile.com##body > header.navbar-fixed-top + div.container-fluid
 sammobile.com#$#body > #home-slider + section.content { margin-top: 0!important; }
@@ -18643,6 +18655,7 @@ thegearpage.net##.vsBB
 thegearpage.net##.vsBBAdhesion
 thegearpage.net##.vsLB
 thegearpage.net##.vsRRPremium
+thegirl.ru##.in-content-recomendations-adv
 thegreatdaily.com##[id^="ads"],#fbbox,.adsbygoogle,#rightAds
 thegreatdaily.com/cat##.col-lg-8.col-md-8{width:1190px;}
 thegreatoutdoorsmag.com,amateurphotographer.com##.post-content-ad
@@ -19163,6 +19176,7 @@ tupaki.com###roadblocker-wrapper
 tupaki.com##+js(remove-node-text, script, roadblocker)
 tupaki.com##body div[id$="_ad"]:not(#style_important)
 tupaki.com##body div[id$="_ad_before"]:not(#style_important)
+tupaki.com##div[id^="right_level_"]:empty:not(#style_important)
 turbopages.org##.page__result > div[class*="type_native"]
 turbopages.org##.turbo-advert
 turbopages.org##div[class*="type_adfox"]
@@ -22728,7 +22742,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||58.218.215.144^
 ||58.218.215.145^
 ||58.com/show/ads?
-||582582.xyz^
 ||58686728.xyz^
 ||5888.tv/Js/topBanner.js
 ||5888.tv/User_Ad/
@@ -22877,6 +22890,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||69shu.org/cnm.js
 ||69shuba.cx^*/shu.js
 ||6a7e08c01b.com^
+||6a7eac2034.com^
 ||6avz.com^
 ||6c.cn^
 ||6cs.icu^
@@ -23474,6 +23488,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||aaronicsonancy.com^
 ||aarunogldf.com^
 ||aatv.app/sport/sport.js
+||aauedwmoofyox.buzz^
 ||aaxads.com^
 ||ab.cnbanbao.com^
 ||ab.pincai.com^
@@ -23575,7 +23590,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||accanfkinrt.com^
 ||acceptablefoot.com^
 ||accessibletighterchorus.com^
-||acclalmeddate.net^
 ||accoptha.com^
 ||account.wps.cn^$replace=/"has_ad": 1/"has_ad": 0/
 ||accountsdoor.com^$third-party
@@ -23600,6 +23614,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||acgshenshicha.cn^
 ||acgsou.com/js/nu
 ||achcdn.com^
+||acheckropery.shop^
 ||achieverknee.com^$third-party
 ||achost.top/uploads/ads/
 ||acidicstraw.com^$third-party
@@ -23645,6 +23660,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||aczaqkaxbwu.com^
 ||aczqkeofzrag.com^
 ||ad*.nexage.com^
+||ad*.zonaplus.tv^
 ||ad-
 ||ad-*.amazonaws.com^
 ||ad-*.appacc.dbankedge.cn^
@@ -24467,6 +24483,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ahp24.site^
 ||ahpengjie.com^
 ||ahqnijgiga.com^
+||ahqpqagt.gay^
 ||ahshujhpyh.com^
 ||ahsjmiov.com^
 ||ai.bioon.com^
@@ -25176,6 +25193,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||app.video.baidu.com/bootimg^
 ||appadhoc.com^
 ||appads.com^
+||appbaqend.com^
 ||appboy-images.com^
 ||appbrain.com^
 ||appc.baidu.com^
@@ -25637,6 +25655,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ayletcecils.shop^
 ||aymtdcg.cn^
 ||aynanjianyy.com^
+||ayoukpts.guru^
 ||ayybzhd.cn^
 ||ayzylwqryaymj.top^
 ||az5i.icu^
@@ -25644,6 +25663,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||azazyjjovmker.top^
 ||azdxypf.cn^
 ||azimechgirosol.top^
+||azkwwrejomzbj.top^
 ||azlajdli.com^
 ||azlohwnummu.com^
 ||azsqkrc.icu^
@@ -25953,6 +25973,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||bbuni.com^
 ||bc.qunar.com^
 ||bc4.fun^
+||bc48fa9adc.com^
 ||bca10c62ca.com^
 ||bcbo.cc^
 ||bcc.com.tw/imgs/adv/
@@ -26115,7 +26136,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||bedamnrankled.top^
 ||bedetestril.shop^
 ||bedmatedurous.top^
-||bedpanearle.shop^
 ||bedrapiona.com^
 ||bedsberry.com^$third-party
 ||bedzbu.xyz^
@@ -26193,8 +26213,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||best-u.vip^$document
 ||best-u.vip^$popup
 ||best0ne.com^
-||bestafffaiir.com^
-||bestafffaiir.net^
 ||bestboundary.com^$third-party
 ||bestcontentindustry.top^
 ||beste1.icu^
@@ -26478,7 +26496,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||blissgallery.xyz^
 ||bljlrl.xyz^
 ||blkxszh.com/zj/
-||bllsteringdates.com^
 ||bloatingexpectantretinal.com^
 ||blockadsnot.com^
 ||blockdial.com^$third-party
@@ -26838,6 +26855,8 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||bubulai.com/js/zv.js
 ||bucklechemistdensity.com^
 ||bucnmtv.top^
+||bucnwtv.top^
+||budfduwa.xyz^
 ||budgetastond.shop^
 ||bufmjknaeprvyd.com^
 ||bugly.qq.com^
@@ -27006,6 +27025,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||c2i.startappnetwork.com^
 ||c2s.startappnetwork.com^
 ||c2shb.pubgw.yahoo.com^
+||c3ee303367.com^
 ||c3j7rk-rtbix.top^
 ||c3j7rk-rtbix.top^$document
 ||c3j7rk-rtbix.top^$popup
@@ -27390,6 +27410,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||cerilloeelboat.shop^
 ||certona.net^
 ||ceruchina.com^
+||cervidtoddy.com^
 ||ceryt111.fun^
 ||ces2007.org^
 ||ceshi1.ink^
@@ -27416,6 +27437,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||cfxvutnbxvcbi.com^
 ||cgczuu.xyz^
 ||cgdyw.net/xx/
+||cgfvmpkypav.com^
 ||cggyyi.xyz^
 ||cgidskif.top^
 ||cgigc.com.cn^
@@ -27783,6 +27805,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||closedcows.com^$third-party
 ||closefriction.com^$third-party
 ||clothegossip.com^
+||clotheswer.com^
 ||clothmexican.com^
 ||cloud-log.yy.com^
 ||cloud.rovio.com/ads/
@@ -27823,6 +27846,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||cm.bilibili.com/mgk/page^
 ||cm.ksmobile.com/api/GetCloudMsgAdv^
 ||cm.passport.iqiyi.com^
+||cm65.com^
 ||cmath.fr/images/fond2.gif
 ||cmath.fr/images/fondsticky.gif
 ||cmbkgmx.cn^
@@ -28201,6 +28225,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||coolapk.com/v6/feed/detail^$replace=/detailSponsorCard//
 ||coolapk.com/v6/feed/detail^$replace=/hotSponsorCard//
 ||coolbuddy.com/HtmlAds.ashx
+||coolestbasis.com^
 ||coolestcatcare.com^$third-party
 ||coolguang.com^
 ||cooliwoudol.net^
@@ -28236,6 +28261,8 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||cosouy.xyz^
 ||costwinner.com^$third-party
 ||cotomucaro.com^
+||cotrck.com^
+||cotrck.com^$popup
 ||count.candou.com^
 ||count.ddooo.com^
 ||count.enet.com.cn^
@@ -28381,7 +28408,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||cricbuzz.com/api/adverts/
 ||cridotty.com^
 ||crigroik.com^
-||crimeagc.com^
 ||crimsonmeadow.com^$third-party
 ||criqai.com^
 ||crispadvertising.com^
@@ -28892,6 +28918,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||dai.siyuetian.net^
 ||dai18.mumu01.com^
 ||daiitmk.cn^
+||daily-info.live^
 ||dailydivision.com^$third-party
 ||dailyportalz.jp/api/dpz/adPosts|
 ||daima.aixiaola.com^
@@ -28929,6 +28956,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||damb68.com^
 ||damdoor.com^$third-party
 ||damierbrain.top^
+||dammitstoics.com^
 ||dammywealth.com^
 ||dampdock.com^$third-party
 ||damuzhi118.com^
@@ -29001,7 +29029,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||datingforyour4.site^
 ||datingforyour4.site^$document
 ||datingforyour4.site^$popup
-||datingiife.net^
 ||datingmeetnet.com^
 ||datingprudethimble.com^
 ||datjwuqifa.com^
@@ -29235,7 +29262,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||dewdroplagoon.com^$third-party
 ||dewincubiatoll.com^
 ||dexinyi.cn^
-||dexterrobbins.cf^
 ||dexuanyu.top^
 ||deypersonalreco.com^
 ||dezna.online^
@@ -29538,6 +29564,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||dlrectdates.com^$document
 ||dlrectdates.com^$popup
 ||dlrtz.com^
+||dlssuizl.art^
 ||dlswbr.baidu.com^
 ||dlweb.sogoucdn.com/hhytrace/*
 ||dlxxjsh.top^
@@ -29744,10 +29771,8 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||download.2345.cn/2345yd1/apk/
 ||download.qidian.com/apknew/hotfix/android_tracker_patch_
 ||download.wan.sohu.com^
-||downloadmoobilee.info^
-||downloadoffice2010.org^
+||downloadfreemium.com^
 ||downloadshi.b-cdn.net^
-||downnora.me^
 ||downxia.com/dgjs/download.js
 ||downxia.com/dgjs/pic/
 ||doxihz.xyz^
@@ -30116,7 +30141,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||earscosign.top^
 ||earthyfarm.com^$third-party
 ||eas.etherscan.com^
-||easelsmuds.com^
 ||easou.com^$third-party
 ||eastday.com/assets/js/resources/detail/
 ||eastday.com/assets/js/resources/new_detail_
@@ -30809,7 +30833,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||faamhel.com^
 ||faaqgje.icu^
 ||fabu333.top^
-||fabulouscasualdate.life^
 ||facai383.oss-cn-guangzhou.aliyuncs.com^
 ||facebook.com/adnw_sync
 ||facebook.com/connect/$third-party
@@ -31066,6 +31089,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||fhfgg.com^
 ||fhglcpf.icu^
 ||fhitagd.cn^
+||fhiulnbk.cam^
 ||fhjrpcmkyrkvi.space^
 ||fhnbrx.xyz^
 ||fhoa365.com^
@@ -31309,10 +31333,8 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||forscprts.com^
 ||fortunatemark.com^$third-party
 ||forum.lowyat.net/random-mobile.php
-||forwanderful.com^
 ||forzubatr.com^
 ||foscvbu.icu^
-||fossorplumper.com^
 ||fotao9.com^
 ||fotao9.com^$script
 ||fotiveearns.com^
@@ -31390,7 +31412,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||free3dgame.xyz^
 ||freeiptvplayer.net/wp-content/uploads/$script
 ||freejavbt.com/assets/images/banner
-||freenightlady.com^
 ||freepik.com/sponsor/$domain=freepik.com
 ||freestyler.ws/php/sharrre.php
 ||freestyler.ws/style/tracking
@@ -31706,10 +31727,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||gautley.top^
 ||gayeah.cn^
 ||gayide.com^
-||gaz-help.ru^
-||gazeroelet.space^
 ||gazetteavaunt.shop^
-||gazettemisrun.click^
 ||gbcnvip15.com^
 ||gbdkbtuzvqrun.fun^
 ||gbgedashb8.fun^
@@ -31780,6 +31798,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||geghlyrecomemu.com^
 ||geinkroll.com^
 ||geiod.xyz^
+||geishastending.com^
 ||gekeebsirs.com^
 ||gelatedsmiting.shop^
 ||gelbooru.com^$csp=script-src 'self' '*' 'unsafe-inline' *.gstatic.com *.google.com *.googleapis.com *.bootstrapcdn.com
@@ -31926,7 +31945,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||gigafile.nu/images/banner/kbus_375x100.png
 ||gigglegrowlworrisome.com^
 ||gigkarma.com^$third-party
-||giirlforyou.com^
 ||gillspaste.com^
 ||gilsiwhisopaum.net^
 ||giltsmalgre.shop^
@@ -31940,7 +31958,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||girdersacetla.top^
 ||girliesemerick.top^
 ||girlingunguyed.com^
-||girllsforyou.net^
 ||gitcrumbs.com^$third-party
 ||gitee.com/joinli/Api/raw/master/banner$replace=/ad_url//
 ||giveawayoftheday.com/web/bannerinf.js
@@ -32240,7 +32257,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||graph.facebook.com/network_ads
 ||graph.facebook.com^$third-party
 ||grarnuns.com^
-||gratefulexamination.com^
 ||gratisreem.shop^$popup
 ||grauckoonsaul.xyz^
 ||gravenesswomanlesszestfully.com^
@@ -32341,6 +32357,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||gt.yy.com^
 ||gt1n.com^
 ||gtags.net^
+||gtbbgjo.art^
 ||gtbdhr.com^
 ||gtcqbnu.cn^
 ||gtdf33.fun^
@@ -32640,7 +32657,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||happylength.com^
 ||happymuttereda.org^
 ||happysponge.com^$third-party
-||hapydatte.net^
 ||hapying.com^
 ||haqmpyazj.com^
 ||haqnabxijzte.com^
@@ -32809,6 +32825,8 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hellojava.com//bja/tanzhou.jpg
 ||helloprojects.up.seesaa.net/image/E381A1E38287E381A3E381A8E381A0E38191-3fe11-thumbnail2.png
 ||heloisessa.com^
+||heloninremake.shop^
+||heloninremake.shop^$popup
 ||helpantutu1.ksmobile.com/nep/v1/$app=com.antutu.ABenchMark
 ||helpcollar.com^$third-party
 ||helpersantlia.shop^
@@ -32830,8 +32848,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hentaivn.net/qx/*.php
 ||henzhuan.com^
 ||heotherwallow.org^
-||hereonline.online^
-||heretopgirls.net^
+||hereofcineols.com^
 ||herlingvotally.shop^
 ||heroclick.cn^
 ||herryimmixed.com^
@@ -32897,6 +32914,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hgidskiu.top^
 ||hgjjk45.com^
 ||hgjxp.cn^
+||hgkqdpjck.com^
 ||hgkzl.cn^
 ||hglm.com^
 ||hgpbhuj.cn^
@@ -33142,6 +33160,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hoppopoult.shop^
 ||horacegreater.com^
 ||horrifiedloudly.com^
+||horsiergrassed.com^
 ||hospitablehall.com^$third-party
 ||hostadsmarkets.com^
 ||hosted.muses.org/mrp.js$domain=flamecomics.xyz|mgeko.cc
@@ -33186,6 +33205,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hpd.baidu.com^
 ||hpeowtophruv.com^
 ||hpg786n.cn^
+||hpgaqdq.shop^
 ||hpgmkbt.icu^
 ||hpiekt.cn^
 ||hpmsentpv.com^
@@ -33232,6 +33252,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hsyoinxsbi.com^
 ||htai.co/tb$script
 ||htai.me/tb$script
+||htcwyzu.bar^
 ||hthivr.xyz^
 ||hthvc.icu^
 ||htienlu.top^
@@ -33353,6 +33374,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||hvert.site^
 ||hvpmpettedcroqc.com^
 ||hvpsfsuruamnc.icu^
+||hvrunsqqy.com^
 ||hvtsxseblxie.com^
 ||hvuqkb.cn^
 ||hvwqgedwpckc.com^
@@ -33716,7 +33738,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||iia1.pikacn.com^
 ||iiad.com^
 ||iifyeldo.top^
-||iigirlslove.com^
 ||iiikefu.com/wp-content/plugins/halfdata-green-popups/js/lepopup.js
 ||iiilab.com/sponsor
 ||iikrmw.xyz^
@@ -33754,6 +33775,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ildrendreaminger.org^
 ||ileeckut.com^
 ||ilepai.com^
+||ileumoctant.com^
 ||ilkwork.com^
 ||illinformed-imagination.com^
 ||illinvention.com^$third-party
@@ -34005,6 +34027,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||insightsonindia.com/wp-content/uploads/*/App_Banner_
 ||instagram.com/static/images/appstore-install-badges^
 ||install.yzapi.top^
+||insteamdentata.shop^
 ||insticator.com^$third-party
 ||instreet.cn^
 ||insurads.com^$third-party
@@ -34688,6 +34711,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||jonahssolfege.shop^
 ||jooklminhr.com^
 ||joorekbzwrbaq.top^
+||jopel.site^
 ||joqowqymkrowl.top^
 ||josephtotters.top^
 ||josipr.com^
@@ -34948,6 +34972,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||jwursera.top^
 ||jwylcrb.cn^
 ||jwz.3conline.com/adpuba/
+||jwzvfjur.work^
 ||jx.618g.com/js/tongji.js$domain=jx.618g.com
 ||jx.la/ll^
 ||jx.lyhanda.com^
@@ -34959,6 +34984,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||jxcn.cn/js/hotpic_
 ||jxcrnwc.xyz^
 ||jxdown.com^$third-party
+||jxeqltpu.property^
 ||jxgd1688.com^
 ||jxjpnd.xyz^
 ||jxmiyrh.icu^
@@ -35065,6 +35091,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||kalifsseeding.top^
 ||kalimbadanic.shop^
 ||kalmukrattail.com^
+||kalpasbyron.com^
 ||kaminari.systems^
 ||kanclick.com^$third-party
 ||kancloud.cn/ad/
@@ -35225,6 +35252,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||khastreol.com^
 ||khedivasample.top^
 ||khegritww.com^
+||khehliets.com^
 ||khengrull.com^
 ||khesuts.com^
 ||khgj.cn^
@@ -35434,6 +35462,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||kruraits.com^
 ||krutilka.net^
 ||krw.yrehdfer.com^
+||krzovyae.work^
 ||ks66666661.com^
 ||ksadrewrty.com^
 ||kscly.com^
@@ -35615,7 +35644,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||lalaping.com^
 ||lalapush.com^
 ||laljjn.xyz^
-||lameconnotation.com^
 ||lameletters.com^$third-party
 ||lamkatgho.com^
 ||lamkghx.icu^
@@ -35706,6 +35734,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ldjfsdku.icu^
 ||ldjhlqr.cn^
 ||ldoshbl.top^
+||ldubnqhe.digital^
 ||ldxinb.xyz^
 ||le.com/*ark=
 ||le4le.com^
@@ -35753,6 +35782,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||leiphone.com/uploads/new/category/pic/*/740x140/
 ||leirerspfz.com^
 ||leirsw.com^
+||lejgqmhpqpibvz.com^
 ||lejieti.com^
 ||leju.com^*=abs.processReqChange
 ||lejuliang.com^
@@ -36052,6 +36082,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||llvlzvroqoqqy.top^
 ||llvlzvroqowmm.top^
 ||llykjmzkqvvar.top^
+||llzlbnvv.work^
 ||lm.ijq.tv^
 ||lm1.tuliu.com^
 ||lm1.wkpcw.cn^
@@ -36075,6 +36106,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||lmmaoo.com^
 ||lmnpd.xyz^
 ||lmoozvlklrorj.top^
+||lmukstyn.xyz^
 ||lmvotk.cn^
 ||lmx7.com^
 ||lmxxxz.com^
@@ -36303,6 +36335,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||luckyforworlds.com^
 ||luckyorange.com^
 ||lucnmtl.top^
+||lucnwtl.top^
 ||lucnxzoylxmvu.love^
 ||ludicrousarch.com^$third-party
 ||lufavevu.com^
@@ -36388,6 +36421,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||lxryhx.xyz^
 ||lxting.com^
 ||lxvsjdmjygqcc.space^
+||lybqnbutkn.com^
 ||lybywxurvxwsby.com^
 ||lycjsix.cn^
 ||lyewe.xyz^
@@ -36629,9 +36663,9 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||magiczenith.com^$third-party
 ||magioe.xyz^
 ||magnetairport.com^$third-party
-||magnificentdates.com^
 ||magsrv.com^
 ||magsrv.com^$subdocument,redirect=noop.html,domain=hanime1.me
+||mahkjru.cam^
 ||mahoganyproductthat.com^
 ||maiabarkan.com^
 ||maiche.com/iframe/rank.html
@@ -36903,7 +36937,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||meetfindsoul.com^
 ||meethanshi.com^
 ||meetsourhig.biz^
-||meetyuorllove.com^
 ||megaad.nz^
 ||meghllzs.com^
 ||megpacokjce.bid^
@@ -36938,6 +36971,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||mengyang.info^
 ||mentionideablit.com^
 ||menu.mt.co.kr/starnews/images/banner/banner_starpoll_install.png
+||menwcopf.work^
 ||meoneintheworldwho.org^
 ||mephimnhat.com/vast*.xml
 ||mepkbonqzmuvl.xyz^
@@ -36962,7 +36996,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||metaversemolecule.com^
 ||metaword.cn^
 ||metheny.cn^
-||metlcuiousdates.com^
 ||metlculousdates.net^
 ||metok.sys.miui.com^
 ||metosk.com^
@@ -37293,6 +37326,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||monitor.uu.qq.com^
 ||monnsutogatya.com/himg/monst/
 ||monorailnailtributary.com^
+||monsnode.com/ad_star_
 ||monsteredward.com^
 ||monsy.com^$third-party
 ||monthfour0225.xyz^
@@ -37688,7 +37722,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||nativead.s3.amazonaws.com^
 ||nativespot.com^$third-party
 ||nativex.com^
-||natprb.ru^
 ||naugaugair.com^
 ||naugaugair.com^$popup
 ||naukreatn.com^
@@ -37826,7 +37859,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||new.xiongzhangad.com^
 ||new.zhuanquxian.com^
 ||newad.ifeng.com^
-||newcliam.com^
 ||newfeatureview.perfectionholic.com^
 ||newlog.reader.qq.com^
 ||newmytrp.com^
@@ -37836,7 +37868,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||newosama.com^
 ||newqiyu.com/*/ads^
 ||newrelic.com^
-||newrrb.bid^
 ||newrtbside.com^
 ||newrtbside.com^$document
 ||newrtbside.com^$popup
@@ -37926,6 +37957,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||niangaoxiansheng.com^
 ||nicearticle.cc^
 ||nicelinks.site/ad-block-
+||nichaithikr.net^
 ||nickdeliverfugitive.com^
 ||nickdotarie.shop^
 ||nickhel.com^
@@ -37994,6 +38026,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||nlhsfsgtye.com^
 ||nljyjt.icu^
 ||nlmrjnew.oss-cn-shanghai.aliyuncs.com^
+||nlnlrn.top^
 ||nlrsrx.xyz^
 ||nltsvf.xyz^
 ||nlvgxr.xyz^
@@ -38146,7 +38179,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||nullnorth.com^$third-party
 ||numb-price.pro^
 ||numbers.md^
-||numbopinion.com^
 ||numerousnest.com^$third-party
 ||nunciodekare.shop^
 ||nuncleslupulic.shop^
@@ -38322,6 +38354,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||octo25.me^
 ||octobertheatrenosy.com^
 ||octopuspop.com^
+||ocvrulo.digital^
 ||odamcsk.top^
 ||odchpubtaop.com^
 ||odcomlkfin.com^
@@ -38393,6 +38426,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ohjgpaxixal.com^
 ||ohmmspkzzxgjq.life^
 ||ohoyao.com^
+||ohqp.cn^
 ||ohtasqomva.com^
 ||ohtotgcwolma.com^
 ||ohtusgy.icu^
@@ -38467,7 +38501,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||olcdn.com^
 ||olcdn.com^$script
 ||oldfashionedoffer.com^$third-party
-||oldrb.pro^
 ||oldulgk.cn^
 ||ole7o.cn^
 ||olelive.com/v1/pub/index/anchor/check/pc/e?
@@ -38478,7 +38511,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||olkdzarkuk.com^
 ||olkoins.com^
 ||ollapodcarua.shop^
-||olmiweb.com^
 ||olmnvbgufy.top^
 ||olmsoneenh.info^
 ||olmsoneenh.info^$domain=avgle.com
@@ -38673,6 +38705,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||oqnkur.icu^
 ||oqpfalkz.com^
 ||oqpgq.top^
+||oqpgzeopstk.com^
 ||oqrtuvguhl.com^
 ||oqrvraab.com^
 ||oqrzuvarwgm.com^
@@ -38706,7 +38739,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||orisonaunties.top^
 ||oritooep.win^
 ||orkreats.com^
-||orlglnaldates.net^
 ||ornozxdarol.com^
 ||orodsmnu.com^
 ||orqjcewtud.com^
@@ -39392,6 +39424,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||pitchcustomaryoz.com^
 ||pitmirkwryness.shop^
 ||pittitepicarii.top^
+||piwvbroxtol.com^
 ||pixanalytics.com^
 ||pixanalytics.pixnet.net^
 ||pixanalytics2.pixnet.net^
@@ -39416,6 +39449,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||pjbbhj.icu^
 ||pjcijbv.icu^
 ||pjdthz.xyz^
+||pjmknmuo.food^
 ||pjogndc8ixoidna.360doc.cn^
 ||pjoo8.com^
 ||pjsbuhl.icu^
@@ -39455,6 +39489,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||platedmanlily.com^
 ||platform.twitter.com/widgets.js
 ||platformbot.xyz^
+||plaxd.com^
 ||play.google.com/intl/en_us/badges/$domain=richluck.ru
 ||playcvn.com/app^
 ||player.avplayer.com^$third-party
@@ -39613,6 +39648,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||potassaseafolk.shop^$popup
 ||potatoesejection.com^
 ||potentiallypantsreseptivereseptive.com^
+||potentymoa.com^
 ||potsaglu.net^$document
 ||pouffstoast.shop^
 ||powedw.com^
@@ -39691,6 +39727,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||preventreversion.com^
 ||previous-trip.pro^
 ||previousplayground.com^$third-party
+||prfectnewoffer.net^
 ||price.com.hk/dfp_price.php?
 ||price.com.hk/ec-discuss-widget.php
 ||price.com.hk/scripts/ysm.js
@@ -39721,7 +39758,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||products.gobankingrates.com^
 ||profile.csdnimg.cn^
 ||profitablecpmrate.com^
-||profitabledestination.com^
 ||profitableexactly.com^
 ||profitableratecpm.com^
 ||profitableratecpm.com^$popup
@@ -40242,6 +40278,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||qktpyrtr.com^
 ||ql.uzuzuz.com^
 ||qling.com^
+||qlsaqtqd.tattoo^
 ||qm2.icu^
 ||qm92.com^$third-party
 ||qmaarqazxcki.com^
@@ -40600,7 +40637,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||rbmigxiog.com^
 ||rbodwtj.icu^
 ||rboyqkyojrqjw.top^
-||rbp-gen1.site^
 ||rbqlbokvorwoa.top^
 ||rbrbr88p.cn^
 ||rbrightscarletcloaksan.org^
@@ -41004,7 +41040,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||rotaban.ru^
 ||rotf.lol^
 ||rotondedweeble.shop^$popup
-||rottencycle.com^
 ||rottenray.com^$third-party
 ||rotularwataps.top^
 ||rou.video/_next/static/chunks/pages/fuli-
@@ -41050,6 +41085,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||rruyfnxmoq.com^
 ||rrxapb.icu^
 ||rrxddl.xyz^
+||rrxoysq.art^
 ||rsanciz.top^
 ||rsationhesaidnda.com^
 ||rsinnxoe.com^
@@ -41148,6 +41184,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||rwuruwrufmp.com^
 ||rwvqbxjsop.com^
 ||rxdsj.com/Runtime/js/vod
+||rxexiaam.guru^
 ||rxfygd.cn^
 ||rxlidz.ink^
 ||rxwan.com^
@@ -41435,6 +41472,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||scurrilidylian.shop^
 ||scws.120ask.com^
 ||scyphaesedge.top^
+||scyphoserippleepidosite.com^
 ||scyrudomqs.com^
 ||scysfytc.com^
 ||scyvqhcehstpt.top^
@@ -41550,7 +41588,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||selectivesummer.com^$third-party
 ||self-study-service.com.cn^
 ||selfemployedcongruous.com^
-||selfishlet.com^
 ||selfishmourninhabitants.com^
 ||selfishsea.com^$third-party
 ||selfishsnake.com^$third-party
@@ -42238,6 +42275,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||solelyguids.top^
 ||soliads.io^
 ||soliads.online^
+||solitudinous.cyou^
 ||somaliainc.com^
 ||somberscarecrow.com^$third-party
 ||sombersea.com^$third-party
@@ -42249,6 +42287,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||somethingrealisticzero.com^
 ||somewhate.club^
 ||sonar.viously.com^$domain=~aufeminin.com|~futura-sciences.com|~gamekult.com|~jeanmarcmorandini.com|~lesnumeriques.com|~marmiton.org|~melty.fr|~nextplz.fr|~the-race.com
+||songslunger.com^
 ||sonkransme.com^
 ||sonobi.com^
 ||sonobi.com^$third-party
@@ -42359,10 +42398,9 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||splashqqlive.gtimg.com/website^
 ||splendid-concert.com^
 ||splendidsugar.com^
-||splendldates.net^
-||splendlddates.net^
 ||splicky.com^
 ||spllfsxyoquda.click^
+||spnut.com^
 ||spoaven.top^
 ||spoh.cn^
 ||spokentomatoestraumatic.com^
@@ -42907,7 +42945,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||sweizab.top^
 ||swelen.com^
 ||swellstocking.com^$third-party
-||sweltering-development.com^
 ||swerilxb.top^
 ||sweriob.top^
 ||swerveplonko.shop^
@@ -43059,6 +43096,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||tamberkabbala.top^
 ||tame-discount.pro^
 ||tamedia.com.tw^$third-party
+||tammycooly.com^
 ||tampermonkey.net/s.js
 ||tanbarshenh.org^
 ||tangchaohes.cn^
@@ -43111,6 +43149,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||tapsense.com^
 ||tapstat.ru^$third-party
 ||tapulsads.ru^
+||tapvigai.property^
 ||tapxavjmyajd.com^
 ||targetedmedia.com.cn^
 ||targetmatch.co^
@@ -43555,6 +43594,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||tkyierpoyjrs.com^
 ||tlbjw.com^
 ||tlcs666.com^
+||tljrvn.icu^
 ||tlprlf.xyz^
 ||tlpyft.xyz^
 ||tlsgq.cn^
@@ -44276,7 +44316,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ufiidvv.icu^
 ||ufile.cc/pps.js
 ||ufile.cc^
-||ufindsoul.com^
 ||ufjslit.top^
 ||ufjwqdmqzlquq.world^
 ||ufolm.com^$third-party
@@ -44338,6 +44377,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||ukankingwithea.com^
 ||ukconomouswom.org^
 ||ukedrevenue.com^
+||ukgqdpte.asia^
 ||ukitert.top^
 ||ukjwyv.icu^
 ||ukkiftx.icu^
@@ -44345,6 +44385,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||uldaens.com^
 ||uleqasforsalesre.com^
 ||uleticgulches.shop^
+||uliafpsf.tattoo^
 ||ulifestyle.com.hk/*/open-in-modal.js
 ||ulink.cc^
 ||ulkoxbra.com^
@@ -44418,7 +44459,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||unecne.com/wp-content/uploads/*ad-
 ||unequalbrake.com^$third-party
 ||unetall.com^
-||unfamiiliardate.net^
 ||unfamiillardates.net^
 ||unfamlliiardates.net^
 ||unfamllliardate.net^
@@ -44532,6 +44572,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||upset-rent.com^
 ||upsight.com^
 ||upskittyan.com^
+||uptherefortowat.org^
 ||uptidtaftxgsx.xyz^
 ||uptodatecraftsman.com^
 ||upzabkw.cn^
@@ -44649,6 +44690,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||uvyuqzx.cn^
 ||uwadakest.cyou^
 ||uwants.com^*_prod.html
+||uwcnmtt.top^
 ||uweisit.top^
 ||uweizat.top^
 ||uweriot.top^
@@ -44733,7 +44775,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||valleylouisadick.com^
 ||valshara.com^$third-party
 ||valuablelayoutgodless.com^
-||valuablenumber.com^
 ||valuad.cloud^
 ||valueclick.cc^
 ||valuecommerce.com^$third-party
@@ -44765,7 +44806,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||vas-hl-x.snssdk.com^
 ||vastilymoid.com^
 ||vastymeropic.shop^
-||vaticmons.digital^
 ||vattingreboots.top^
 ||vatzxd.xyz^
 ||vauglistesou.net^
@@ -44787,7 +44827,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||vcdn.biz/*_mggads/
 ||vchiy.com^
 ||vckeyscqjreer.icu^
-||vclouds.com^
 ||vcommission.com^$popup
 ||vcqrhjrcmbhr.com^
 ||vcsxfynmtgwwj.global^
@@ -44880,6 +44919,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||vhabwaoh.com^
 ||vhacakzwegu.com^
 ||vhbhundyietwwc.com^
+||vhdloveixqgt.com^
 ||vhhvldyuhm.xyz^
 ||vhid.cn^
 ||vhinyvcsxcga.com^
@@ -45007,7 +45047,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||vkjqbb.xyz^
 ||vkjsnvk.com^
 ||vktztp.xyz^
-||vlctorytime.net^
 ||vlgkotr.cn^
 ||vlitag.com^
 ||vlive.qqvideo.tc.qq.com^
@@ -45063,6 +45102,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||voodc.com/avurc
 ||voodopseewhekuw.net^
 ||vookooboace.net^
+||voopaibauth.net^
 ||vooptisipugry.net^
 ||voowozoogroagom.com^
 ||vophothoorom.net^
@@ -45336,6 +45376,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||wauhoawheephouk.net^
 ||waust.at^
 ||wauthooptee.net^
+||waxandwapped.com^
 ||waxapushlite.com^
 ||wayftertheyhadg.com^
 ||wayqq.cn/g/
@@ -45609,6 +45650,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||wijmkizacdan.com^
 ||wijnavoqca.com^
 ||wijvziputcul.com^
+||wikgojdk.bar^
 ||wikia.nocookie.net/*/*adengine3*
 ||wikia.nocookie.net/*/*analytics*
 ||wikia.nocookie.net/*/*tracking*
@@ -45914,6 +45956,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||wwilmie.top^
 ||wwjtdjj.cn^
 ||wwkh9ku.xyz^
+||wwqsvldq.work^
 ||wwursere.top^
 ||wwvqboerllqqz.top^
 ||www-static.xunzai.com/static/wwwimg/$image
@@ -46808,6 +46851,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||xzji.com/data/block_js/softShow_
 ||xzqxz.net^
 ||xzrhvv.xyz^
+||xzuiiodjvtxjl.site^
 ||xzvhyx.com^
 ||xzxhpcdz.icu^
 ||xzylcgwycrmaa.click^
@@ -46874,7 +46918,6 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||yaszcbffjnfak.today^
 ||yatemy.cn^
 ||yawltelurgy.shop^
-||yayn.site^
 ||yazhouyu.
 ||yb0a.xyz^
 ||yb6.me/img/VY9F^
@@ -47199,6 +47242,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||yqgzaewe.cn^
 ||yqingge.com/wap.js
 ||yqjfvjqijnuwd.com^
+||yqjshgx.bar^
 ||yqlxkzs.cn^
 ||yqlzccxn.icu^
 ||yqp-oxzxjecq.world^
@@ -47506,6 +47550,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||zdwykjd.icu^
 ||zdx25.site^
 ||zdx30.site^
+||zdyqomdslsozb.club^
 ||zdznsqb.com^
 ||ze5.com^
 ||zealousinquiriesgovernment.com^
@@ -47516,6 +47561,7 @@ zzz.gamers-luck.com##.gamer-sp_postbottom
 ||zedatthewonderfulst.org^
 ||zedo.com^
 ||zedo.com^$third-party
+||zedtrekh.online^
 ||zeelooshashey.net^
 ||zektch.buzz^
 ||zektch.xyz^
