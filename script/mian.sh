@@ -5,6 +5,7 @@
 # curl -o i-AdGuard_Popups.txt https://filters.adtidy.org/extension/ublock/filters/19_optimized.txt
 curl -o i-AdGuard_AppBanners.txt https://filters.adtidy.org/extension/ublock/filters/20_optimized.txt
 curl -o i-AdGuard_MobileAds.txt https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
+curl -o i-adt-chinalist-easylist.txt http://sub.adtchrome.com/adt-chinalist-easylist.txt
 curl -o i-AdGuard_china.txt https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt
 curl -o i-easylist.txt https://easylist-downloads.adblockplus.org/easylist-minified.txt
 curl -o i-cjx-annoyance.txt https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
